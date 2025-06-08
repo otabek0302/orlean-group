@@ -37,7 +37,7 @@ export default function Loading() {
           },
         }}
         className="font-[450]">
-        {`pre-order • pre-order • pre-order • `}
+        {`Welcome • Xush Kelibsiz • Добро Пожаловать • `}
       </SpinningText>
     </div>
   );

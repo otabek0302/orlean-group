@@ -84,32 +84,30 @@ export default function Home() {
       <section id="partners" className="py-10">
         <div className="container">
           <div className="relative py-6">
-            <InfiniteSlider durationOnHover={80} duration={40} gap={112} className="w-full">
-              <div className="flex">
-                <img className="mx-auto h-5 w-fit dark:invert" src="https://html.tailus.io/blocks/customers/nvidia.svg" alt="Nvidia Logo" height="20" width="auto" />
+            <InfiniteSlider durationOnHover={80} duration={60} gap={112} className="w-full">
+              <div className="relative flex h-16 w-20">
+                <Image src="https://html.tailus.io/blocks/customers/nvidia.svg" alt="Nvidia Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
-
-              <div className="flex">
-                <img className="mx-auto h-4 w-fit dark:invert" src="https://html.tailus.io/blocks/customers/column.svg" alt="Column Logo" height="16" width="auto" />
+              <div className="relative flex h-16 w-20">
+                <Image src="https://html.tailus.io/blocks/customers/column.svg" alt="Column Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
-              <div className="flex">
-                <img className="mx-auto h-4 w-fit dark:invert" src="https://html.tailus.io/blocks/customers/github.svg" alt="GitHub Logo" height="16" width="auto" />
+              <div className="relative flex h-16 w-20">
+                <Image src="https://html.tailus.io/blocks/customers/github.svg" alt="GitHub Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
-              <div className="flex">
-                <img className="mx-auto h-5 w-fit dark:invert" src="https://html.tailus.io/blocks/customers/nike.svg" alt="Nike Logo" height="20" width="auto" />
+              <div className="relative flex h-16 w-20">
+                <Image src="https://html.tailus.io/blocks/customers/nike.svg" alt="Nike Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
-              <div className="flex">
-                <img className="mx-auto h-5 w-fit dark:invert" src="https://html.tailus.io/blocks/customers/lemonsqueezy.svg" alt="Lemon Squeezy Logo" height="20" width="auto" />
+              <div className="relative flex h-16 w-20">
+                <Image src="https://html.tailus.io/blocks/customers/lemonsqueezy.svg" alt="Lemon Squeezy Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
-              <div className="flex">
-                <img className="mx-auto h-4 w-fit dark:invert" src="https://html.tailus.io/blocks/customers/laravel.svg" alt="Laravel Logo" height="16" width="auto" />
+              <div className="relative flex h-16 w-20">
+                <Image src="https://html.tailus.io/blocks/customers/laravel.svg" alt="Laravel Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
-              <div className="flex">
-                <img className="mx-auto h-7 w-fit dark:invert" src="https://html.tailus.io/blocks/customers/lilly.svg" alt="Lilly Logo" height="28" width="auto" />
+              <div className="relative flex h-16 w-20">
+                <Image src="https://html.tailus.io/blocks/customers/lilly.svg" alt="Lilly Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
-
-              <div className="flex">
-                <img className="mx-auto h-6 w-fit dark:invert" src="https://html.tailus.io/blocks/customers/openai.svg" alt="OpenAI Logo" height="24" width="auto" />
+              <div className="relative flex h-16 w-20">
+                <Image src="https://html.tailus.io/blocks/customers/openai.svg" alt="OpenAI Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
             </InfiniteSlider>
 
@@ -185,49 +183,27 @@ export default function Home() {
 
       <section id="contact" className="py-20">
         <div className="container">
-          <div className="bg-primary flex flex-col rounded-[32px] md:flex-row md:justify-between gap-20">
+          <div className="bg-primary flex flex-col gap-20 rounded-[32px] md:flex-row md:justify-between">
             {/* Left Side: Form Content */}
             <div className="max-w-2xl flex-1 px-20 py-32">
-              <h2 className="text-4xl font-bold text-white capitalize mb-4">{t('pages.home.contact.title')}</h2>
+              <h2 className="mb-4 text-4xl font-bold text-white capitalize">{t('pages.home.contact.title')}</h2>
               <p className="mb-8 text-lg text-white/80">{t('pages.home.contact.description')}</p>
 
-              <form className="space-y-4 mt-10">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <Input
-                    type="text"
-                    placeholder={t('pages.home.contact.form.placeholder.first-name')}
-                    className="bg-white/10 border-white/20 text-white placeholder:text-white/60 h-12 rounded-xl focus:ring-2 focus:ring-white/40 focus:border-transparent transition-all duration-200 hover:border-white/30"
-                  />
-                  <Input
-                    type="text"
-                    placeholder={t('pages.home.contact.form.placeholder.last-name')}
-                    className="bg-white/10 border-white/20 text-white placeholder:text-white/60 h-12 rounded-xl focus:ring-2 focus:ring-white/40 focus:border-transparent transition-all duration-200 hover:border-white/30"
-                  />
+              <form className="mt-10 space-y-4">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <Input type="text" placeholder={t('pages.home.contact.form.placeholder.first-name')} className="h-12 rounded-xl border-white/20 bg-white/10 text-white transition-all duration-200 placeholder:text-white/60 hover:border-white/30 focus:border-transparent focus:ring-2 focus:ring-white/40" />
+                  <Input type="text" placeholder={t('pages.home.contact.form.placeholder.last-name')} className="h-12 rounded-xl border-white/20 bg-white/10 text-white transition-all duration-200 placeholder:text-white/60 hover:border-white/30 focus:border-transparent focus:ring-2 focus:ring-white/40" />
                 </div>
 
-                <Input
-                  type="email"
-                  placeholder={t('pages.home.contact.form.placeholder.email')}
-                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60 h-12 rounded-xl focus:ring-2 focus:ring-white/40 focus:border-transparent transition-all duration-200 hover:border-white/30"
-                />
+                <Input type="email" placeholder={t('pages.home.contact.form.placeholder.email')} className="h-12 rounded-xl border-white/20 bg-white/10 text-white transition-all duration-200 placeholder:text-white/60 hover:border-white/30 focus:border-transparent focus:ring-2 focus:ring-white/40" />
 
-                <Input
-                  type="tel"
-                  placeholder={t('pages.home.contact.form.placeholder.phone')}
-                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60 h-12 rounded-xl focus:ring-2 focus:ring-white/40 focus:border-transparent transition-all duration-200 hover:border-white/30"
-                />
+                <Input type="tel" placeholder={t('pages.home.contact.form.placeholder.phone')} className="h-12 rounded-xl border-white/20 bg-white/10 text-white transition-all duration-200 placeholder:text-white/60 hover:border-white/30 focus:border-transparent focus:ring-2 focus:ring-white/40" />
 
-                <Textarea
-                  placeholder={t('pages.home.contact.form.placeholder.message')}
-                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60 min-h-[120px] rounded-xl focus:ring-2 focus:ring-white/40 focus:border-transparent transition-all duration-200 hover:border-white/30 resize-none"
-                />
+                <Textarea placeholder={t('pages.home.contact.form.placeholder.message')} className="min-h-[120px] resize-none rounded-xl border-white/20 bg-white/10 text-white transition-all duration-200 placeholder:text-white/60 hover:border-white/30 focus:border-transparent focus:ring-2 focus:ring-white/40" />
 
-                <Button
-                  type="submit"
-                  className="w-full bg-white hover:bg-white/90 text-primary font-semibold h-12 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group border-2 border-transparent hover:border-white/20"
-                >
+                <Button type="submit" className="text-primary group h-12 w-full rounded-xl border-2 border-transparent bg-white font-semibold shadow-lg transition-all duration-300 hover:border-white/20 hover:bg-white/90 hover:shadow-xl">
                   <span className="mr-2">{t('pages.home.contact.form.send')}</span>
-                  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
+                  <ArrowRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
                 </Button>
               </form>
             </div>
