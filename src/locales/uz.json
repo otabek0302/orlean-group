@@ -8,7 +8,116 @@
       "hero": {
         "title": "Professional mutaxassislar sizning biznesingizni o'sish va noyob muammolardan o'tkazib beradi.",
         "description": "Biz sizning kompaniyangizning ehtiyojlariga moslashtirilgan, shaxsiy e'tibor va maslahat berish, rivojlantirish va strategik rejalashtirishda tasdiqlangan tajribaga ega bo'lgan keng qamrovli biznes yechimlarini taqdim etamiz.",
-        "button": "Biz bilan bog'laning"
+        "button": "Biz bilan bog'laning",
+        "features": {
+          "partners": "Partnerlar",
+          "projects": "Tayyorlangan loyihalar",
+          "clients": "Mashhur mijozlar"
+        }
+      },
+      "about": {
+        "title": "Biz haqimizda",
+        "p-1": "Orlean Group - это ведущий поставщик бизнес-решений с более чем десятилетним опытом в обеспечении эксклюзивных результатов. Наша команда экспертов в области консультирования объединяет глубокие знания отрасли с инновационными стратегиями, чтобы помочь бизнесу процветать в современной конкурентной среде.",
+        "p-2": "Мы специализируемся на комплексном консультировании по бизнесу, решениях IT и стратегическом планировании, предлагая услуги, адаптированные к вашим уникальным вызовам. Наша преданность превосходному качеству и успеху клиентов является основой всего, что мы делаем, обеспечивая устойчивый рост и измеримые результаты для вашего бизнеса.",
+        "buttons": {
+          "business": "Biznes",
+          "it-solutions": "IT yechimlar",
+          "consulting": "Konsultatsiya",
+          "real-estate": "Mulk",
+          "construction": "Qurilish",
+          "investment": "Investitsiya",
+          "logistics": "Logistika",
+          "education": "Ta'lim",
+          "finance": "Finans",
+          "retail": "Savdo",
+          "energy": "Energiya"
+        }
+      },
+      "services": {
+        "title": "Kompleks IT va digital biznes yechimlari",
+        "description": "Biz sizning biznesingizni rivojlantirishga yordam berish uchun keng qamrovli xizmatlar taklif qilamiz. IT dan digital transformatsiya gacha, sizning barcha ehtiyojlaringizga qamrab oling.",
+        "grid": {
+          "business-consulting": {
+            "title": "Biznes-konsultatsiya",
+            "description": "Biznes-konsultatsiya, operatsiyalarni optimallashtirish va mavjud biznes metodologiyalari orqali tashqi rivojlanishni ta'minlash uchun ishlab chiqilgan strategik biznes konsultatsiyasi."
+          },
+          "digital-solutions": {
+            "title": "Digital yechimlar",
+            "description": "Digital yechimlar, operatsiyalarni optimallashtirish va mavjud biznes metodologiyalari orqali tashqi rivojlanishni ta'minlash uchun ishlab chiqilgan strategik digital yechimlar."
+          },
+          "process-optimization": {
+            "title": "Jarayon optimallashtirish",
+            "description": "Jarayon optimallashtirish, operatsiyalarni optimallashtirish va mavjud biznes metodologiyalari orqali tashqi rivojlanishni ta'minlash uchun ishlab chiqilgan strategik jarayon optimallashtirish."
+          },
+          "international-expansion": {
+            "title": "Xorijiy rivojlanish",
+            "description": "Xorijiy rivojlanish, operatsiyalarni optimallashtirish va mavjud biznes metodologiyalari orqali tashqi rivojlanishni ta'minlash uchun ishlab chiqilgan strategik xorijiy rivojlanish."
+          },
+          "partnership-development": {
+            "title": "Hamkorlik rivojlanishi",
+            "description": "Hamkorlik rivojlanishi, operatsiyalarni optimallashtirish va mavjud biznes metodologiyalari orqali tashqi rivojlanishni ta'minlash uchun ishlab chiqilgan strategik hamkorlik rivojlanishi."
+          }
+        }
+      },
+      "testimonials": {
+        "title": "Bizning mijozlarimizning fikrlari",
+        "description": "Bizning mijozlarimiz hamkorlarimiz, va biz ularga ishonaman. Bu biz haqimizda nima deyishishini ko'rish."
+      },
+      "contact": {
+        "title": "Biz bilan bog'laning",
+        "description": "Biz sizning yordamga yordam berish uchun yoki savolingizni qo'shish uchun siz bilan bog'lanamiz.",
+        "form": {
+          "first-name": "Ism",
+          "last-name": "Familiya",
+          "email": "Email",
+          "phone": "Telefon",
+          "message": "Xabar",
+          "send": "Xabar yuborish",
+          "placeholder": {
+            "first-name": "Ismingizni kiriting",
+            "last-name": "Familiyangizni kiriting",
+            "email": "Emailingizni kiriting",
+            "phone": "Telefoningizni kiriting",
+            "message": "Xabaringizni kiriting"
+          }
+        }
+      },
+      "faqs": {
+        "title": "Yangi imkoniyatlar shu yerdan boshlanadi, bizga qo'shiling",
+        "description": "Biz sizning biznesingizni rivojlantirishga yordam berish uchun keng qamrovli xizmatlar taklif qilamiz. IT dan digital transformatsiya gacha, sizning barcha ehtiyojlaringizga qamrab oling.",
+        "button": "Biz bilan bog'laning",
+        "faqs": [
+          {
+            "id": "1",
+            "title": "Orlean Group qanday xizmatlar taklif qiladi ?",
+            "content": "Orlean Group barcha o'lchamdagi bizneslar uchun dasturiy ta'minot ishlab chiqish, IT konsalting, UI/UX dizayn, raqamli marketing, avtomatlashtirish yechimlari va autsorsing xizmatlarini taklif qiladi. Biz shuningdek, tayyor mahsulotlar va maxsus korporativ tizimlarni taqdim etamiz."
+          },
+          {
+            "id": "2",
+            "title": "Orlean Group bilan kimlar hamkorlik qilishi mumkin ?",
+            "content": "Biz startupsga MVP yaratishga, rivojlanishli bizneslarga digital transformatsiya kerakligiga, va masshtabli sistemalar qidiruvchilarga ishlaymiz. Bizning fleksible yondashuvimiz turli sohalarga mos keladi, masalan, savdo, tabiat huzurida, ta'lim, logistika va finans."
+          },
+          {
+            "id": "3",
+            "title": "Orlean qanday sifat va xavfsizlikni ta'minlaydi ?",
+            "content": "Biz agil metodologiyalar, CI/CD pipelinelar, avtomatik testlash va dasturiy kodlarini tekshirishni o'z ichiga olgan sanoat bo'yicha eng yaxshi amallarni qo'llaymiz. Xavfsizlik ma'lumotlarni shifrlash, qat'iy kirish boshqarishlar va GDPR-mos keladigan ma'lumotlarni qayta ishlash orqali asoslangan."
+          },
+          {
+            "id": "4",
+            "title": "Orlean qanday to'liq loyiha rivojlantirishini bajaradi ?",
+            "content": "Bizning jamoa to'liq mahsulot hayotiy tsikli: topish, UI/UX dizayn, rivojlantirish, testlash, ishga tushirish va ishga tushirishdan so'ng yordam. Biz ham masshtabli infrastruktura, nazorat va uzun muddatli saqlash bilan yordam beramiz."
+          },
+          {
+            "id": "5",
+            "title": "Men qanday boshlanishim mumkin yoki qo'shishni so'rashim mumkin ?",
+            "content": "Siz saytimizning bog'lanish shakli orqali biz bilan bog'lanishingiz, yoki bizga hello@orlean.uz elektron pochta orqali yozishingiz mumkin, yoki bizning konsultantlaridan biriga topish zvonishini jadvalga qo'ying. Biz sizning ehtiyojlaringizni eshitamiz va 24–48 soat ichida moslashtirilgan taklif beramiz."
+          },
+          {
+            "id": "6",
+            "title": "Men qanday boshlanishim mumkin yoki qo'shishni so'rashim mumkin ?",
+            "content": "Siz saytimizning bog'lanish shakli orqali biz bilan bog'lanishingiz, yoki bizga hello@orlean.uz elektron pochta orqali yozishingiz mumkin, yoki bizning konsultantlaridan biriga topish zvonishini jadvalga qo'ying. Biz sizning ehtiyojlaringizni eshitamiz va 24–48 soat ichida moslashtirilgan taklif beramiz."
+          }
+        ]
       }
     },
     "about": {

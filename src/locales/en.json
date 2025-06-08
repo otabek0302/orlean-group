@@ -8,7 +8,116 @@
       "hero": {
         "title": "Professional experts guiding your business through growth and unique challenges.",
         "description": "We provide comprehensive business solutions tailored to your company's needs with personalized attention and proven expertise in consulting, development, and strategic planning.",
-        "button": "Contact Us"
+        "button": "Contact Us",
+        "features": {
+          "partners": "Partners",
+          "projects": "Projects Complete",
+          "clients": "Happy Clients"
+        }
+      },
+      "about": {
+        "title": "About Us",
+        "p-1": "Orlean Group is a leading business solutions provider with over a decade of experience in delivering exceptional results. Our team of expert consultants combines deep industry knowledge with innovative strategies to help businesses thrive in today's competitive landscape.",
+        "p-2": "We specialize in comprehensive business consulting, IT solutions, and strategic planning, offering tailored services that address your unique challenges. Our commitment to excellence and client success drives everything we do, ensuring sustainable growth and measurable results for your business.",
+        "buttons": {
+          "business": "Business",
+          "it-solutions": "IT Solutions",
+          "consulting": "Consulting",
+          "real-estate": "Real Estate",
+          "construction": "Construction",
+          "investment": "Investment",
+          "logistics": "Logistics",
+          "education": "Education",
+          "finance": "Finance",
+          "retail": "Retail",
+          "energy": "Energy"
+        }
+      },
+      "services": {
+        "title": "Comprehensive IT & Digital Business Solutions",
+        "description": "We offer a wide range of services to help you grow your business. From IT consulting to digital transformation, we have you covered.",
+        "grid": {
+          "business-consulting": {
+            "title": "Business Consulting",
+            "description": "Strategic business consulting designed to optimize operations and provide comprehensive growth solutions through established business methodologies."
+          },
+          "digital-solutions": {
+            "title": "Digital Solutions",
+            "description": "Strategic digital solutions designed to optimize operations and provide comprehensive growth solutions through established business methodologies."
+          },
+          "process-optimization": {
+            "title": "Process Optimization",
+            "description": "Strategic process optimization designed to optimize operations and provide comprehensive growth solutions through established business methodologies."
+          },
+          "international-expansion": {
+            "title": "International Expansion",
+            "description": "Strategic international expansion designed to optimize operations and provide comprehensive growth solutions through established business methodologies."
+          },
+          "partnership-development": {
+            "title": "Partnership Development",
+            "description": "Strategic partnership development designed to optimize operations and provide comprehensive growth solutions through established business methodologies."
+          }
+        }
+      },
+      "testimonials": {
+        "title": "What Our Clients Say",
+        "description": "Our clients are our partners, and we are proud to have them. Here is what they have to say about us."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "description": "We are here to help you. Contact us for any questions or inquiries.",
+          "form": {
+            "first-name": "First Name",
+            "last-name": "Last Name",
+            "email": "Email Address",
+            "phone": "Phone Number",
+            "message": "Message",
+            "send": "Send Message",
+            "placeholder": {
+              "first-name": "Enter your first name",
+              "last-name": "Enter your last name",
+              "email": "Enter your email address",
+              "phone": "Enter your phone number",
+              "message": "Enter your message"
+            }
+          }
+      },
+      "faqs": {
+        "title": "This is the start of something new, let's make it happen",
+        "description": "We offer a wide range of services to help you grow your business. From IT consulting to digital transformation, we have you covered.",
+        "button": "Contact Us",
+        "faqs": [
+          {
+            "id": "1",
+            "title": "What services does Orlean Group provide ?",
+            "content": "Orlean Group offers software development, IT consulting, UI/UX design, digital marketing, automation solutions, and outsourcing services for businesses of all sizes. We also provide turnkey products and tailored enterprise systems."
+          },
+          {
+            "id": "2",
+            "title": "Who can benefit from working with Orlean Group ?",
+            "content": "We work with startups looking to build MVPs, growing businesses needing digital transformation, and enterprises seeking scalable systems. Our flexible approach adapts to various industries including retail, healthcare, education, logistics, and finance."
+          },
+          {
+            "id": "3",
+            "title": "How does Orlean ensure quality and security ?",
+            "content": "We follow industry best practices including agile methodologies, CI/CD pipelines, automated testing, and regular code audits. Security is prioritized through encrypted communications, strict access controls, and GDPR-compliant data handling."
+          },
+          {
+            "id": "4",
+            "title": "Can Orlean handle full-cycle project development ?",
+            "content": "Our team can manage the full product lifecycle: discovery, UI/UX design, development, testing, launch, and post-launch support. We also help with scaling infrastructure, monitoring, and long-term maintenance."
+          },
+          {
+            "id": "5",
+            "title": "How can I get started or request a quote ?",
+            "content": "You can contact us through our website's contact form, email us at hello@orlean.uz, or schedule a discovery call with one of our consultants. We’ll listen to your needs and provide a tailored proposal within 24–48 hours."
+          },
+          {
+            "id": "6",
+            "title": "How can I get started or request a quote ?",
+            "content": "You can contact us through our website's contact form, email us at hello@orlean.uz, or schedule a discovery call with one of our consultants. We’ll listen to your needs and provide a tailored proposal within 24–48 hours."
+          }
+        ]
       }
     },
     "about": {
