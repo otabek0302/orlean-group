@@ -1,0 +1,57 @@
+'use client';
+
+import Image from 'next/image';
+import Link from 'next/link';
+
+import { Logo } from '@/assets';
+import { useTranslation } from 'react-i18next';
+import { LanguagesButton } from '@/components/ui/languages-button';
+import { ThemeButton } from '@/components/ui/theme-button';
+import { MobileMenu } from '@/components/ui/mobile-menu';
+import { usePathname } from 'next/navigation';
+
+const Header = () => {
+  const { t } = useTranslation();
+  const pathname = usePathname();
+
+  return (
+    <header>
+      <div className="container">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2 py-4">
+            <div className="relative h-14 w-14">
+              <Image src={Logo} alt="logo" fill priority className="h-full w-full object-contain" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            </div>
+            <p className="flex flex-col">
+              <span className="text-primary text-2xl font-black uppercase dark:text-white">Orlean Group</span>
+              <small className="text-copy-text pl-0.5 text-xs">Professional Business Solutions</small>
+            </p>
+          </div>
+          <div className="flex items-center gap-6">
+            <ul className="hidden items-center gap-6 md:flex">
+              <li className={`text-copy-title hover:text-primary cursor-pointer text-base leading-normal font-medium transition-all duration-300 md:text-lg ${pathname == '/' ? 'border-primary' : 'border-transparent'} text-start`}>
+                <Link href="/">{t('components.header.home')}</Link>
+              </li>
+              <li className={`text-copy-title hover:text-primary cursor-pointer text-base leading-normal font-medium transition-all duration-300 md:text-lg ${pathname == '/about' ? 'border-primary' : 'border-transparent'} text-start`}>
+                <Link href="/about">{t('components.header.about')}</Link>
+              </li>
+              <li className={`text-copy-title hover:text-primary cursor-pointer text-base leading-normal font-medium transition-all duration-300 md:text-lg ${pathname == '/services' ? 'border-primary' : 'border-transparent'} text-start`}>
+                <Link href="/services">{t('components.header.services')}</Link>
+              </li>
+              <li className={`text-copy-title hover:text-primary cursor-pointer text-base leading-normal font-medium transition-all duration-300 md:text-lg ${pathname == '/contact' ? 'border-primary' : 'border-transparent'} text-start`}>
+                <Link href="/contact">{t('components.header.contact')}</Link>
+              </li>
+            </ul>
+            <div className="flex items-center gap-2">
+              <LanguagesButton />
+              <ThemeButton />
+              <MobileMenu />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

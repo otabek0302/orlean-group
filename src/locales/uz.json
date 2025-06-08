@@ -1,0 +1,79 @@
+{
+  "pages": {
+    "home": {
+      "meta": {
+        "title": "Orlean Group",
+        "description": "Orlean Group - Your trusted partner in the food industry"
+      },
+      "hero": {
+        "title": "Professional mutaxassislar sizning biznesingizni o'sish va noyob muammolardan o'tkazib beradi.",
+        "description": "Biz sizning kompaniyangizning ehtiyojlariga moslashtirilgan, shaxsiy e'tibor va maslahat berish, rivojlantirish va strategik rejalashtirishda tasdiqlangan tajribaga ega bo'lgan keng qamrovli biznes yechimlarini taqdim etamiz.",
+        "button": "Biz bilan bog'laning"
+      }
+    },
+    "about": {
+      "meta": {
+        "title": "Biz haqimizda",
+        "description": "Biz haqimizda"
+      }
+    },
+    "services": {
+      "meta": {
+        "title": "Xizmatlar",
+        "description": "Xizmatlar"
+      }
+    },
+    "contact": {
+      "meta": {
+        "title": "Bog'lanish",
+        "description": "Bog'lanish"
+      }
+    },
+    "support": {
+      "meta": {
+        "title": "Yordam",
+        "description": "Yordam"
+      }
+    },
+    "privacyPolicy": {
+      "meta": {
+        "title": "Maxfiylik siyosati",
+        "description": "Maxfiylik siyosati"
+      }
+    },
+    "termsOfService": {
+      "meta": {
+        "title": "Shartlar va shartlar",
+        "description": "Shartlar va shartlar"
+      }
+    },
+    "not-found": {
+      "title": "404 - Sahifa topilmadi",
+      "description": "Siz qidirayotgan sahifa mavjud emas.",
+      "button": "Bosh sahifaga o'tish"
+    }
+  },
+  "components": {
+    "header": {
+      "home": "Bosh sahifa",
+      "about": "Biz haqimizda",
+      "services": "Xizmatlar",
+      "contact": "Bog'lanish"
+    },
+    "footer": {
+      "title": "Professional biznes yechimlari — Muvaffaqiyatda ishonchli hamkoringiz !",
+      "button": "Biz bilan bog'laning",
+      "copyright": "Orlean Group © 2025",
+      "supported": "Ishlab chiqaruvchi",
+      "links": {
+        "home": "Bosh sahifa",
+        "about": "Biz haqimizda",
+        "services": "Xizmatlar",
+        "contact": "Bog'lanish",
+        "support": "Yordam",
+        "terms-of-service": "Shartlar va shartlar",
+        "privacy-policy": "Maxfiylik siyosati"
+      }
+    }
+  }
+}

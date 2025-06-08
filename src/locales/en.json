@@ -1,0 +1,79 @@
+{
+  "pages": {
+    "home": {
+      "meta": {
+        "title": "Orlean Group",
+        "description": "Orlean Group - Your trusted partner in the food industry"
+      },
+      "hero": {
+        "title": "Professional experts guiding your business through growth and unique challenges.",
+        "description": "We provide comprehensive business solutions tailored to your company's needs with personalized attention and proven expertise in consulting, development, and strategic planning.",
+        "button": "Contact Us"
+      }
+    },
+    "about": {
+      "meta": {
+        "title": "About Us",
+        "description": "About Orlean Group"
+      }
+    },
+    "services": {
+      "meta": {
+        "title": "Services",
+        "description": "Services provided by Orlean Group"
+      }
+    },
+    "contact": {
+      "meta": {
+        "title": "Contact Us",
+        "description": "Contact Orlean Group"
+      }
+    },
+    "support": {
+      "meta": {
+        "title": "Support",
+        "description": "Support provided by Orlean Group"
+      }
+    },
+    "privacyPolicy": {
+      "meta": {
+        "title": "Privacy Policy",
+        "description": "Privacy Policy for Orlean Group"
+      }
+    },
+    "termsOfService": {
+      "meta": {
+        "title": "Terms of Service",
+        "description": "Terms of Service for Orlean Group"
+      }
+    },
+    "not-found": {
+      "title": "404 - Page Not Found",
+      "description": "The page you are looking for does not exist.",
+      "button": "Go to Home"
+    }
+  },
+  "components": {
+    "header": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "footer": {
+      "title": "Professional Business Solutions — Your Trusted Partner in Success !",
+      "button": "Contact Us",
+      "copyright": "Orlean Group © 2025",
+      "supported": "Developed by",
+      "links": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "contact": "Contact",
+        "support": "Support",
+        "terms-of-service": "Terms of Service",
+        "privacy-policy": "Privacy Policy"
+      }
+    }
+  }
+}
