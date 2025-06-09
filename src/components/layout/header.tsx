@@ -3,15 +3,19 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { Logo } from '@/assets';
+import { Logo, LogoColored, LogoWhite } from '@/assets';
 import { useTranslation } from 'react-i18next';
 import { LanguagesButton } from '@/components/ui/languages-button';
 import { ThemeButton } from '@/components/ui/theme-button';
 import { MobileMenu } from '@/components/ui/mobile-menu';
 import { usePathname } from 'next/navigation';
+import { useTheme } from 'next-themes';
+import { useMobile } from '@/hooks/useMobile';
 
 const Header = () => {
   const { t } = useTranslation();
+  const { isMobile } = useMobile();
+  const { theme } = useTheme();
   const pathname = usePathname();
 
   return (
@@ -21,7 +25,13 @@ const Header = () => {
           <div className="flex items-center gap-2 py-4">
             <div className="relative h-10 w-10 lg:h-14 lg:w-14">
               <Link href="/">
-                <Image src={Logo} alt="logo" fill priority className="h-full w-full object-contain" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+              {
+                isMobile ? (
+                  <Image src={theme === 'dark' ? LogoWhite : LogoColored} alt="logo" fill priority className="h-full w-full object-contain" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                ) : (
+                  <Image src={Logo} alt="logo" fill priority className="h-full w-full object-contain" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                )
+              }
               </Link>
             </div>
             <p className="hidden flex-col md:flex">

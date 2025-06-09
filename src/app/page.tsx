@@ -42,21 +42,21 @@ export default function Home() {
   return (
     <>
       <section id="hero" className="min-[380px]:pb-5">
-        <div className="container">
-          <div className="bg-primary flex flex-col rounded-[24px] lg:rounded-[32px] md:flex-row md:justify-between">
+        <div className="container px-4">
+          <div className="bg-primary dark:bg-input/30 flex flex-col-reverse rounded-[20px] lg:rounded-[32px] lg:flex-row md:justify-between">
             {/* Left Side: Text Content */}
-            <div className="max-w-4xl flex-1 p-6 md:pr-0 lg:p-14 xl:px-20 xl:py-32">
-              <h1 className="mb-4 text-xl min-[380px]:text-3xl lg:text-5xl leading-tight font-bold text-white capitalize">{t('pages.home.hero.title')}</h1>
-              <p className="mb-6 text-sm lg:text-lg text-white/80">{t('pages.home.hero.description')}</p>
-              <div className="flex gap-4">
-                <Button variant="outline" asChild className="group border-primary relative h-fit cursor-pointer overflow-hidden rounded-lg lg:rounded-xl border-1 bg-white px-2.5 py-1.5 transition-all duration-300 hover:border-white hover:bg-transparent lg:px-3.5 lg:py-2.5">
+            <div className="max-w-4xl flex-1 p-4 lg:p-14 xl:px-20 xl:py-32">
+              <h1 className="mb-2 text-4xl md:text-5xl lg:text-6xl leading-tight font-bold text-white capitalize">{t('pages.home.hero.title')}</h1>
+              <p className="mb-3 text-base md:text-lg lg:text-xl text-white/80">{t('pages.home.hero.description')}</p>
+              <div className="flex gap-2">
+                <Button variant="outline" asChild className="group border-primary dark:border-primary hover:bg-primary relative h-fit cursor-pointer overflow-hidden rounded-lg lg:rounded-xl border-1 bg-white dark:bg-primary px-3 py-2 transition-all duration-300 hover:border-white hover:bg-transparent lg:px-4 lg:py-2.5">
                   <Link href="tel:">
-                    <span className="text-primary text-base leading-normal font-normal group-hover:text-white">{t('pages.home.hero.button')}</span>
-                    <Phone className="text-primary mr-1 h-5 w-5 rotate-45 transition-all duration-500 group-hover:rotate-80 group-hover:text-white" />
+                    <span className="text-primary dark:text-white text-sm lg:text-base leading-normal font-normal group-hover:text-white">{t('pages.home.hero.button')}</span>
+                    <Phone className="text-primary dark:text-white mr-1 h-4 w-4 lg:h-5 lg:w-5 rotate-45 transition-all duration-500 group-hover:rotate-80 group-hover:text-white" />
                   </Link>
                 </Button>
               </div>
-              <div className="mt-10 hidden lg:flex gap-4 lg:gap-6 xl:gap-16">
+              <div className="mt-6 hidden lg:flex gap-4 lg:gap-6 xl:gap-16">
                 <div>
                   <span className="text-3xl lg:text-5xl font-black text-white">20+</span>
                   <h2 className="text-xs lg:text-lg font-normal text-white/80 uppercase">{t('pages.home.hero.features.partners')}</h2>
@@ -73,18 +73,18 @@ export default function Home() {
             </div>
 
             {/* Right Side: Image */}
-            <div className="max-w-xl flex-1 p-4">
-              <div className="relative h-72 min-[380px]:h-96 md:h-full overflow-hidden rounded-[16px] lg:rounded-[22px]">
+            <div className="lg:max-w-xl flex-1 p-4">
+              <div className="relative h-64 min-[380px]:h-80 lg:h-full overflow-hidden rounded-[16px] lg:rounded-[22px]">
                 <Image src={HeroImage} alt="hero-image" fill priority className="h-full w-full object-cover object-top" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="partners" className="xl:py-10">
-        <div className="container">
-          <div className="relative py-6">
-            <InfiniteSlider durationOnHover={80} duration={60} gap={100} className="w-full min-[380px]:gap-16">
+      <section id="partners" className="py-6 md:py-10 lg:py-20">
+        <div className="container px-4">
+          <div className="relative py-4">
+            <InfiniteSlider durationOnHover={80} duration={60} gap={80} className="w-full min-[380px]:gap-12">
               <div className="relative flex h-10 min-[380px]:h-16 w-16 min-[380px]:w-20">
                 <Image src="https://html.tailus.io/blocks/customers/nvidia.svg" alt="Nvidia Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
@@ -118,31 +118,32 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="about" className="py-20">
-        <div className="container">
-          <div className="flex flex-col md:flex-row">
+      <section id="about" className="py-8 lg:py-20">
+        <div className="container px-4">
+          <div className="flex flex-col lg:flex-row">
+            
             {/* Left Side: Text Content */}
-            <div className="max-w-xl flex-1 p-4">
-              <div className="relative h-full overflow-hidden rounded-[26px]">
+            <div className="lg:max-w-xl flex-1 p-3">
+              <div className="relative h-80 lg:h-full overflow-hidden rounded-[20px] lg:rounded-[26px]">
                 <AboutImage />
               </div>
             </div>
 
             {/* Right Side: Image */}
-            <div className="flex-1 p-5">
-              <div className="relative overflow-hidden px-20 py-32">
-                <DIcons.Plus strokeWidth={4} className="text-ali absolute -top-5 -left-5 h-10 w-10" />
-                <DIcons.Plus strokeWidth={4} className="text-ali absolute -bottom-5 -left-5 h-10 w-10" />
-                <DIcons.Plus strokeWidth={4} className="text-ali absolute -top-5 -right-5 h-10 w-10" />
-                <DIcons.Plus strokeWidth={4} className="text-ali absolute -right-5 -bottom-5 h-10 w-10" />
+            <div className="flex-1 p-3">
+              <div className="relative overflow-hidden p-4 lg:p-14 xl:px-20 xl:py-32">
+                <DIcons.Plus strokeWidth={4} className="text-ali absolute -top-4 -left-4 h-8 w-8 lg:h-10 lg:w-10" />
+                <DIcons.Plus strokeWidth={4} className="text-ali absolute -bottom-4 -left-4 h-8 w-8 lg:h-10 lg:w-10" />
+                <DIcons.Plus strokeWidth={4} className="text-ali absolute -top-4 -right-4 h-8 w-8 lg:h-10 lg:w-10" />
+                <DIcons.Plus strokeWidth={4} className="text-ali absolute -right-4 -bottom-4 h-8 w-8 lg:h-10 lg:w-10" />
                 <h2 className="text-copy-title mb-4 text-4xl leading-tight font-bold capitalize">{t('pages.home.about.title')}</h2>
                 <p className="text-copy-text mb-8 text-lg">{t('pages.home.about.p-1')}</p>
                 <p className="text-copy-text mb-8 text-lg">{t('pages.home.about.p-2')}</p>
                 <div className="flex gap-4">
-                  <Button variant="outline" asChild className="group border-primary hover:bg-primary relative h-fit cursor-pointer overflow-hidden rounded-lg border-1 bg-white px-2.5 py-1.5 transition-all duration-300 lg:px-3.5">
+                  <Button variant="outline" asChild className="group border-primary dark:border-primary hover:bg-primary relative h-fit cursor-pointer overflow-hidden rounded-lg lg:rounded-xl border-1 bg-white dark:bg-primary px-3 py-2 transition-all duration-300 hover:border-white hover:bg-transparent lg:px-4 lg:py-2.5">
                     <Link href="tel:">
-                      <span className="text-primary text-base leading-normal font-normal group-hover:text-white">{t('pages.home.hero.button')}</span>
-                      <Phone className="text-primary mr-1 h-5 w-5 rotate-45 transition-all duration-500 group-hover:rotate-80 group-hover:text-white" />
+                      <span className="text-primary dark:text-white text-sm lg:text-base leading-normal font-normal group-hover:text-white">{t('pages.home.hero.button')}</span>
+                      <Phone className="text-primary dark:text-white mr-1 h-4 w-4 lg:h-5 lg:w-5 rotate-45 transition-all duration-500 group-hover:rotate-80 group-hover:text-white" />
                     </Link>
                   </Button>
                   <SocialMedia />
@@ -152,13 +153,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="services" className="py-20">
-        <div className="container">
+      <section id="services" className="py-8 lg:py-20">
+        <div className="container px-4">
           <div className="mb-4 flex flex-col gap-2">
-            <h2 className="text-copy-title text-4xl font-bold">{t('pages.home.services.title')}</h2>
-            <p className="text-copy-text pl-1 text-base font-normal">{t('pages.home.services.description')}</p>
+            <h2 className="text-copy-title text-3xl min-[380px]:text-4xl lg:text-5xl font-bold">{t('pages.home.services.title')}</h2>
+            <p className="text-copy-text pl-1 text-sm min-[380px]:text-base lg:text-lg font-normal">{t('pages.home.services.description')}</p>
           </div>
-          <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[38rem] xl:grid-rows-2">
+          <ul className="grid grid-cols-1 grid-rows-none gap-3 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[38rem] xl:grid-rows-2">
             <GridItem area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]" icon={<Box className="h-5 w-5" />} title={t('pages.home.services.grid.business-consulting.title')} description={t('pages.home.services.grid.business-consulting.description')} />
             <GridItem area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]" icon={<Settings className="h-5 w-5" />} title={t('pages.home.services.grid.digital-solutions.title')} description={t('pages.home.services.grid.digital-solutions.description')} />
             <GridItem area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]" icon={<Lock className="h-5 w-5" />} title={t('pages.home.services.grid.process-optimization.title')} description={t('pages.home.services.grid.process-optimization.description')} />
@@ -167,42 +168,42 @@ export default function Home() {
           </ul>
         </div>
       </section>
-      <section id="testimonials" className="py-20">
-        <div className="container">
-          <div className="flex flex-col gap-4">
-            <h2 className="text-copy-title text-4xl font-bold">{t('pages.home.testimonials.title')}</h2>
-            <p className="text-copy-text pl-1 text-base font-normal">{t('pages.home.testimonials.description')}</p>
+      <section id="testimonials" className="py-10 lg:py-20">
+        <div className="container px-4">
+          <div className="flex flex-col gap-2">
+            <h2 className="text-copy-title text-3xl min-[380px]:text-4xl lg:text-5xl font-bold">{t('pages.home.testimonials.title')}</h2>
+            <p className="text-copy-text pl-1 text-sm min-[380px]:text-base lg:text-lg font-normal">{t('pages.home.testimonials.description')}</p>
           </div>
-          <div className="mt-10 flex max-h-[740px] justify-center gap-6 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] px-2 md:flex-row">
+          <div className="mt-6 flex max-h-[740px] justify-center gap-3 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] px-2 md:flex-row md:gap-6">
             <TestimonialsColumn testimonials={TESTIMONIALS.slice(0, 3)} duration={15} />
             <TestimonialsColumn testimonials={TESTIMONIALS.slice(3, 6)} className="hidden md:block" duration={19} />
             <TestimonialsColumn testimonials={TESTIMONIALS.slice(6, 9)} className="hidden lg:block" duration={17} />
           </div>
         </div>
       </section>
-      <section id="contact" className="py-20">
-        <div className="container">
-          <div className="bg-primary flex flex-col gap-20 rounded-[32px] md:flex-row md:justify-between">
+      <section id="contact" className="py-10 lg:py-20">
+        <div className="container px-4">
+          <div className="bg-primary flex flex-col gap-8 rounded-[24px] md:flex-row md:justify-between">
             {/* Left Side: Form Content */}
-            <div className="max-w-2xl flex-1 px-20 py-32">
-              <h2 className="mb-4 text-4xl font-bold text-white capitalize">{t('pages.home.contact.title')}</h2>
-              <p className="mb-8 text-lg text-white/80">{t('pages.home.contact.description')}</p>
+            <div className="max-w-2xl flex-1 px-4 py-8 lg:px-20 lg:py-32">
+              <h2 className="mb-2 text-3xl min-[380px]:text-4xl lg:text-5xl font-bold text-white capitalize">{t('pages.home.contact.title')}</h2>
+              <p className="mb-4 text-sm min-[380px]:text-base lg:text-lg text-white/80">{t('pages.home.contact.description')}</p>
 
-              <form className="mt-10 space-y-4">
-                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                  <Input type="text" placeholder={t('pages.home.contact.form.placeholder.first-name')} className="h-12 rounded-xl border-white/20 bg-white/10 text-white transition-all duration-200 placeholder:text-white/60 hover:border-white/30 focus:border-transparent focus:ring-2 focus:ring-white/40" />
-                  <Input type="text" placeholder={t('pages.home.contact.form.placeholder.last-name')} className="h-12 rounded-xl border-white/20 bg-white/10 text-white transition-all duration-200 placeholder:text-white/60 hover:border-white/30 focus:border-transparent focus:ring-2 focus:ring-white/40" />
+              <form className="mt-6 space-y-3">
+                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                  <Input type="text" placeholder={t('pages.home.contact.form.placeholder.first-name')} className="h-11 lg:h-12 rounded-xl border-white/20 bg-white/10 text-white transition-all duration-200 placeholder:text-white/60 hover:border-white/30 focus:border-transparent focus:ring-2 focus:ring-white/40" />
+                  <Input type="text" placeholder={t('pages.home.contact.form.placeholder.last-name')} className="h-11 lg:h-12 rounded-xl border-white/20 bg-white/10 text-white transition-all duration-200 placeholder:text-white/60 hover:border-white/30 focus:border-transparent focus:ring-2 focus:ring-white/40" />
                 </div>
 
-                <Input type="email" placeholder={t('pages.home.contact.form.placeholder.email')} className="h-12 rounded-xl border-white/20 bg-white/10 text-white transition-all duration-200 placeholder:text-white/60 hover:border-white/30 focus:border-transparent focus:ring-2 focus:ring-white/40" />
+                <Input type="email" placeholder={t('pages.home.contact.form.placeholder.email')} className="h-11 lg:h-12 rounded-xl border-white/20 bg-white/10 text-white transition-all duration-200 placeholder:text-white/60 hover:border-white/30 focus:border-transparent focus:ring-2 focus:ring-white/40" />
 
-                <Input type="tel" placeholder={t('pages.home.contact.form.placeholder.phone')} className="h-12 rounded-xl border-white/20 bg-white/10 text-white transition-all duration-200 placeholder:text-white/60 hover:border-white/30 focus:border-transparent focus:ring-2 focus:ring-white/40" />
+                <Input type="tel" placeholder={t('pages.home.contact.form.placeholder.phone')} className="h-11 lg:h-12 rounded-xl border-white/20 bg-white/10 text-white transition-all duration-200 placeholder:text-white/60 hover:border-white/30 focus:border-transparent focus:ring-2 focus:ring-white/40" />
 
-                <Textarea placeholder={t('pages.home.contact.form.placeholder.message')} className="min-h-[120px] resize-none rounded-xl border-white/20 bg-white/10 text-white transition-all duration-200 placeholder:text-white/60 hover:border-white/30 focus:border-transparent focus:ring-2 focus:ring-white/40" />
+                <Textarea placeholder={t('pages.home.contact.form.placeholder.message')} className="min-h-[100px] lg:min-h-[120px] resize-none rounded-xl border-white/20 bg-white/10 text-white transition-all duration-200 placeholder:text-white/60 hover:border-white/30 focus:border-transparent focus:ring-2 focus:ring-white/40" />
 
-                <Button type="submit" className="text-primary group h-12 w-full rounded-xl border-2 border-transparent bg-white font-semibold shadow-lg transition-all duration-300 hover:border-white/20 hover:bg-white/90 hover:shadow-xl">
-                  <span className="mr-2">{t('pages.home.contact.form.send')}</span>
-                  <ArrowRight className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1" />
+                <Button type="submit" className="text-primary group h-11 lg:h-12 w-full rounded-xl border-2 border-transparent bg-white font-semibold shadow-lg transition-all duration-300 hover:border-white/20 hover:bg-white/90 hover:shadow-xl">
+                  <span className="mr-2 text-sm lg:text-base">{t('pages.home.contact.form.send')}</span>
+                  <ArrowRight className="h-4 w-4 lg:h-5 lg:w-5 transition-transform duration-200 group-hover:translate-x-1" />
                 </Button>
               </form>
             </div>
@@ -216,16 +217,16 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="faqs" className="py-20">
-        <div className="container">
-          <div className="flex flex-col gap-4 md:flex-row">
-            <div className="flex max-w-lg flex-1 flex-col items-start justify-start gap-4">
-              <h2 className="text-copy-title text-4xl font-bold">{t('pages.home.faqs.title')}</h2>
-              <p className="text-copy-text pl-1 text-base font-normal">{t('pages.home.faqs.description')}</p>
-              <Button variant="outline" asChild className="group border-primary hover:bg-primary relative h-fit cursor-pointer overflow-hidden rounded-2xl border-1 bg-white px-2.5 py-2.5 transition-all duration-300 lg:px-3.5">
+      <section id="faqs" className="py-10 lg:py-20">
+        <div className="container px-4">
+          <div className="flex flex-col gap-3 md:flex-row">
+            <div className="flex max-w-lg flex-1 flex-col items-start justify-start gap-2">
+              <h2 className="text-copy-title text-3xl min-[380px]:text-4xl lg:text-5xl font-bold">{t('pages.home.faqs.title')}</h2>
+              <p className="text-copy-text pl-1 text-sm min-[380px]:text-base lg:text-lg font-normal">{t('pages.home.faqs.description')}</p>
+              <Button variant="outline" asChild className="group border-primary dark:border-primary hover:bg-primary relative h-fit cursor-pointer overflow-hidden rounded-lg lg:rounded-xl border-1 bg-white dark:bg-primary px-3 py-2 transition-all duration-300 hover:border-white hover:bg-transparent lg:px-4 lg:py-2.5">
                 <Link href="tel:">
-                  <span className="text-primary text-base leading-normal font-normal group-hover:text-white">{t('pages.home.faqs.button')}</span>
-                  <Phone className="text-primary mr-1 h-5 w-5 rotate-45 transition-all duration-500 group-hover:rotate-80 group-hover:text-white" />
+                  <span className="text-primary dark:text-white text-sm lg:text-base leading-normal font-normal group-hover:text-white">{t('pages.home.faqs.button')}</span>
+                  <Phone className="text-primary dark:text-white mr-1 h-4 w-4 lg:h-5 lg:w-5 rotate-45 transition-all duration-500 group-hover:rotate-80 group-hover:text-white" />
                 </Link>
               </Button>
             </div>
