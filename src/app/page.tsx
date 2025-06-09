@@ -41,72 +41,72 @@ export default function Home() {
 
   return (
     <>
-      <section id="hero" className="pb-5">
+      <section id="hero" className="min-[380px]:pb-5">
         <div className="container">
-          <div className="bg-primary flex flex-col rounded-[32px] md:flex-row md:justify-between">
+          <div className="bg-primary flex flex-col rounded-[24px] lg:rounded-[32px] md:flex-row md:justify-between">
             {/* Left Side: Text Content */}
-            <div className="max-w-4xl flex-1 px-20 py-32">
-              <h1 className="mb-4 text-5xl leading-tight font-bold text-white capitalize">{t('pages.home.hero.title')}</h1>
-              <p className="mb-8 text-lg text-white/80">{t('pages.home.hero.description')}</p>
+            <div className="max-w-4xl flex-1 p-6 md:pr-0 lg:p-14 xl:px-20 xl:py-32">
+              <h1 className="mb-4 text-xl min-[380px]:text-3xl lg:text-5xl leading-tight font-bold text-white capitalize">{t('pages.home.hero.title')}</h1>
+              <p className="mb-6 text-sm lg:text-lg text-white/80">{t('pages.home.hero.description')}</p>
               <div className="flex gap-4">
-                <Button variant="outline" asChild className="group border-primary relative h-fit cursor-pointer overflow-hidden rounded-xl border-1 bg-white px-2.5 py-2.5 transition-all duration-300 hover:border-white hover:bg-transparent lg:px-3.5">
+                <Button variant="outline" asChild className="group border-primary relative h-fit cursor-pointer overflow-hidden rounded-lg lg:rounded-xl border-1 bg-white px-2.5 py-1.5 transition-all duration-300 hover:border-white hover:bg-transparent lg:px-3.5 lg:py-2.5">
                   <Link href="tel:">
                     <span className="text-primary text-base leading-normal font-normal group-hover:text-white">{t('pages.home.hero.button')}</span>
                     <Phone className="text-primary mr-1 h-5 w-5 rotate-45 transition-all duration-500 group-hover:rotate-80 group-hover:text-white" />
                   </Link>
                 </Button>
               </div>
-              <div className="mt-10 flex gap-20">
+              <div className="mt-10 hidden lg:flex gap-4 lg:gap-6 xl:gap-16">
                 <div>
-                  <span className="text-5xl font-black text-white">20+</span>
-                  <h2 className="text-lg font-normal text-white/80 uppercase">{t('pages.home.hero.features.partners')}</h2>
+                  <span className="text-3xl lg:text-5xl font-black text-white">20+</span>
+                  <h2 className="text-xs lg:text-lg font-normal text-white/80 uppercase">{t('pages.home.hero.features.partners')}</h2>
                 </div>
                 <div>
-                  <span className="text-5xl font-black text-white">8</span>
-                  <h2 className="text-lg font-normal text-white/80 uppercase">{t('pages.home.hero.features.projects')}</h2>
+                  <span className="text-3xl lg:text-5xl font-black text-white">11+</span>
+                  <h2 className="text-xs lg:text-lg font-normal text-white/80 uppercase">{t('pages.home.hero.features.projects')}</h2>
                 </div>
                 <div>
-                  <span className="text-5xl font-black text-white">20</span>
-                  <h2 className="text-lg font-normal text-white/80 uppercase">{t('pages.home.hero.features.clients')}</h2>
+                  <span className="text-3xl lg:text-5xl font-black text-white">22+</span>
+                  <h2 className="text-xs lg:text-lg font-normal text-white/80 uppercase">{t('pages.home.hero.features.clients')}</h2>
                 </div>
               </div>
             </div>
 
             {/* Right Side: Image */}
             <div className="max-w-xl flex-1 p-4">
-              <div className="relative h-full overflow-hidden rounded-[26px]">
-                <Image src={HeroImage} alt="hero-image" fill priority className="h-full w-full object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+              <div className="relative h-72 min-[380px]:h-96 md:h-full overflow-hidden rounded-[16px] lg:rounded-[22px]">
+                <Image src={HeroImage} alt="hero-image" fill priority className="h-full w-full object-cover object-top" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="partners" className="py-10">
+      <section id="partners" className="xl:py-10">
         <div className="container">
           <div className="relative py-6">
-            <InfiniteSlider durationOnHover={80} duration={60} gap={112} className="w-full">
-              <div className="relative flex h-16 w-20">
+            <InfiniteSlider durationOnHover={80} duration={60} gap={100} className="w-full min-[380px]:gap-16">
+              <div className="relative flex h-10 min-[380px]:h-16 w-16 min-[380px]:w-20">
                 <Image src="https://html.tailus.io/blocks/customers/nvidia.svg" alt="Nvidia Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
-              <div className="relative flex h-16 w-20">
+              <div className="relative flex h-10 min-[380px]:h-16 w-16 min-[380px]:w-20">
                 <Image src="https://html.tailus.io/blocks/customers/column.svg" alt="Column Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
-              <div className="relative flex h-16 w-20">
+              <div className="relative flex h-10 min-[380px]:h-16 w-16 min-[380px]:w-20">
                 <Image src="https://html.tailus.io/blocks/customers/github.svg" alt="GitHub Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
-              <div className="relative flex h-16 w-20">
+              <div className="relative flex h-10 min-[380px]:h-16 w-16 min-[380px]:w-20">
                 <Image src="https://html.tailus.io/blocks/customers/nike.svg" alt="Nike Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
-              <div className="relative flex h-16 w-20">
+              <div className="relative flex h-10 min-[380px]:h-16 w-16 min-[380px]:w-20">
                 <Image src="https://html.tailus.io/blocks/customers/lemonsqueezy.svg" alt="Lemon Squeezy Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
-              <div className="relative flex h-16 w-20">
+              <div className="relative flex h-10 min-[380px]:h-16 w-16 min-[380px]:w-20">
                 <Image src="https://html.tailus.io/blocks/customers/laravel.svg" alt="Laravel Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
-              <div className="relative flex h-16 w-20">
+              <div className="relative flex h-10 min-[380px]:h-16 w-16 min-[380px]:w-20">
                 <Image src="https://html.tailus.io/blocks/customers/lilly.svg" alt="Lilly Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
-              <div className="relative flex h-16 w-20">
+              <div className="relative flex h-10 min-[380px]:h-16 w-16 min-[380px]:w-20">
                 <Image src="https://html.tailus.io/blocks/customers/openai.svg" alt="OpenAI Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
             </InfiniteSlider>
@@ -180,7 +180,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section id="contact" className="py-20">
         <div className="container">
           <div className="bg-primary flex flex-col gap-20 rounded-[32px] md:flex-row md:justify-between">
@@ -217,7 +216,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section id="faqs" className="py-20">
         <div className="container">
           <div className="flex flex-col gap-4 md:flex-row">

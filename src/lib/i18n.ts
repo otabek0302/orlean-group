@@ -14,8 +14,8 @@ if (!i18n.isInitialized) {
       ru: { translation: ru },
       uz: { translation: uz },
     },
-    lng: 'uz',
-    fallbackLng: 'uz',
+    lng: 'en',
+    fallbackLng: 'en',
     interpolation: { escapeValue: false },
   });
 }

@@ -19,26 +19,28 @@ const Header = () => {
       <div className="container">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2 py-4">
-            <div className="relative h-14 w-14">
-              <Image src={Logo} alt="logo" fill priority className="h-full w-full object-contain" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+            <div className="relative h-10 w-10 lg:h-14 lg:w-14">
+              <Link href="/">
+                <Image src={Logo} alt="logo" fill priority className="h-full w-full object-contain" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+              </Link>
             </div>
-            <p className="flex flex-col">
-              <span className="text-primary text-2xl font-black uppercase dark:text-white">Orlean Group</span>
-              <small className="text-copy-text pl-0.5 text-xs">Professional Business Solutions</small>
+            <p className="hidden flex-col md:flex">
+              <span className="text-primary text-xl leading-none font-black uppercase lg:text-2xl lg:leading-tight dark:text-white">Orlean Group</span>
+              <small className="text-copy-text pl-0.5 text-[10px] lg:text-xs">Professional Business Solutions</small>
             </p>
           </div>
-          <div className="flex items-center gap-6">
-            <ul className="hidden items-center gap-6 md:flex">
-              <li className={`text-copy-title hover:text-primary cursor-pointer text-base leading-normal font-medium transition-all duration-300 md:text-lg ${pathname == '/' ? 'border-primary' : 'border-transparent'} text-start`}>
+          <div className="flex items-center gap-4 lg:gap-6">
+            <ul className="hidden items-center gap-4 md:flex lg:gap-6">
+              <li className={`text-copy-title hover:text-primary cursor-pointer text-sm leading-normal font-medium transition-all duration-300 lg:text-lg ${pathname == '/' ? 'border-primary' : 'border-transparent'} text-start`}>
                 <Link href="/">{t('components.header.home')}</Link>
               </li>
-              <li className={`text-copy-title hover:text-primary cursor-pointer text-base leading-normal font-medium transition-all duration-300 md:text-lg ${pathname == '/about' ? 'border-primary' : 'border-transparent'} text-start`}>
+              <li className={`text-copy-title hover:text-primary cursor-pointer text-sm leading-normal font-medium transition-all duration-300 lg:text-lg ${pathname == '/about' ? 'border-primary' : 'border-transparent'} text-start`}>
                 <Link href="/about">{t('components.header.about')}</Link>
               </li>
-              <li className={`text-copy-title hover:text-primary cursor-pointer text-base leading-normal font-medium transition-all duration-300 md:text-lg ${pathname == '/services' ? 'border-primary' : 'border-transparent'} text-start`}>
+              <li className={`text-copy-title hover:text-primary cursor-pointer text-sm leading-normal font-medium transition-all duration-300 lg:text-lg ${pathname == '/services' ? 'border-primary' : 'border-transparent'} text-start`}>
                 <Link href="/services">{t('components.header.services')}</Link>
               </li>
-              <li className={`text-copy-title hover:text-primary cursor-pointer text-base leading-normal font-medium transition-all duration-300 md:text-lg ${pathname == '/contact' ? 'border-primary' : 'border-transparent'} text-start`}>
+              <li className={`text-copy-title hover:text-primary cursor-pointer text-sm leading-normal font-medium transition-all duration-300 lg:text-lg ${pathname == '/contact' ? 'border-primary' : 'border-transparent'} text-start`}>
                 <Link href="/contact">{t('components.header.contact')}</Link>
               </li>
             </ul>

@@ -6,8 +6,8 @@ export default function Loading() {
   return (
     <div className="bg-background fixed inset-0 z-50 flex h-screen items-center justify-center">
       <SpinningText
-        radius={5.5}
-        fontSize={1}
+        radius={6}
+        fontSize={2}
         variants={{
           container: {
             hidden: {
@@ -36,7 +36,7 @@ export default function Loading() {
             },
           },
         }}
-        className="font-[450]">
+        className="font-[450] text-2xl leading-none">
         {`Welcome • Xush Kelibsiz • Добро Пожаловать • `}
       </SpinningText>
     </div>
