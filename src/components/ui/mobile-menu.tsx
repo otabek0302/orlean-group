@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { AnimatedHamburgerButton } from '@/components/ui/animated-hamburger-button';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { Button } from './button';
 import { Mail, Phone } from 'lucide-react';
 
@@ -33,10 +33,16 @@ const menu = {
 };
 
 export const MobileMenu = () => {
-  const { t } = useTranslation('components.header');
+  const { t } = useTranslation('');
   const [open, setOpen] = useState(false);
-
+  
   const pathname = usePathname();
+  const router = useRouter();
+
+  const handleClick = (path: string) => {
+    setOpen(false);
+    router.push(path);
+  };
 
   return (
     <div className="relative flex items-center justify-center md:hidden">
@@ -45,24 +51,24 @@ export const MobileMenu = () => {
       <motion.div className={`bg-background border dark:border-input ${!open && 'dark:border-none'} absolute z-10 overflow-hidden rounded-xl ${open ? 'bg-primary dark:bg-background' : ''}`} variants={menu} animate={open ? 'open' : 'closed'} initial="closed">
         {open && (
           <motion.ul className="flex h-full w-full flex-col justify-center gap-5 p-5">
-            <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-white capitalize ${pathname == '/' ? 'border-white' : 'border-transparent'} text-start`} onClick={() => setOpen(false)}>
+            <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-white capitalize ${pathname == '/' ? 'border-white' : 'border-transparent'} text-start`} onClick={() => handleClick('/')}>
               <Link href="/" className="px-1">
-                {t('home')}
+                {t('components.header.home')}
               </Link>
             </motion.li>
-            <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-white capitalize ${pathname == '/about' ? 'border-white' : 'border-transparent'} text-start`} onClick={() => setOpen(false)}>
+            <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-white capitalize ${pathname == '/about' ? 'border-white' : 'border-transparent'} text-start`} onClick={() => handleClick('/about')}>
               <Link href="/" className="px-1">
-                {t('about')}
+                {t('components.header.about')}
               </Link>
             </motion.li>
-            <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-white capitalize ${pathname == '/services' ? 'border-white' : 'border-transparent'} text-start`} onClick={() => setOpen(false)}>
+            <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-white capitalize ${pathname == '/services' ? 'border-white' : 'border-transparent'} text-start`} onClick={() => handleClick('/services')}>
               <Link href="/" className="px-1">
-                {t('services')}
+                {t('components.header.services')}
               </Link>
             </motion.li>
-            <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-white capitalize ${pathname == '/contact' ? 'border-white' : 'border-transparent'} text-start`} onClick={() => setOpen(false)}>
+            <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-white capitalize ${pathname == '/contact' ? 'border-white' : 'border-transparent'} text-start`} onClick={() => handleClick('/contact')}>
               <Link href="/" className="px-1">
-                {t('contact')}
+                {t('components.header.contact')}
               </Link>
             </motion.li>
             <div className="mt-2 flex flex-col items-start justify-start gap-2 pl-2">
