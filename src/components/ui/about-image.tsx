@@ -16,10 +16,10 @@ export const AboutImage = () => {
   }, [theme]);
 
   return (
-    <div className="relative h-full w-full overflow-hidden rounded-[26px] border">
+    <div className="relative h-full w-full overflow-hidden rounded-[26px] border z-50">
       <Particles className="absolute inset-0" quantity={100} ease={80} color={color} refresh />
       <BackgroundBeamsWithCollision>
-        <Gravity gravity={{ x: 0, y: 1 }} className="z-20 h-full w-full">
+        <Gravity gravity={{ x: 0, y: 1 }} className="z-20 h-full w-full overflow-hidden">
           <MatterBody matterBodyOptions={{ friction: 0.5, restitution: 0.2 }} x="30%" y="10%">
             <div className="border-primary text-primary rounded-xl border px-8 py-4 text-xl hover:cursor-grab sm:text-2xl md:text-3xl">{t('pages.home.about.buttons.business')}</div>
           </MatterBody>

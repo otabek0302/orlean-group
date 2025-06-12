@@ -80,6 +80,10 @@
             "phone": "Telefoningizni kiriting",
             "message": "Xabaringizni kiriting"
           }
+        },
+        "messages": {
+          "success": "Xabar muvaffaqiyatli yuborildi",
+          "error": "Xabar yuborishda xatolik yuz berdi"
         }
       },
       "faqs": {
@@ -124,18 +128,108 @@
       "meta": {
         "title": "Biz haqimizda",
         "description": "Biz haqimizda"
+      },
+      "title": "Yangi narsa boshlanishi, buni qilamiz",
+      "description": "Kichik biznesni hozirda qiyin. Qo'shimcha murakkabliklarni oldini olish uchun eski, qiyinlashgan savdo usullarini tashlab yuboring. Bizning maqsadimiz - SMB savdoini soddalashtirish, uni hozirgi zamon bo'yicha oson va tezroq qilish.",
+      "buttons": {
+        "contact": "Biz bilan bog'laning",
+        "services": "Bizning xizmatlarimiz"
+      },
+      "content": {
+        "text": "Biz biznesingizni rivojlantirishga yordam berish uchun keng qamrovli xizmatlar taklif qilamiz. IT dan digital transformatsiya gacha, sizning barcha ehtiyojlaringizga qamrab oling.",
+        "story": {
+          "title": "Bizning tarixi",
+          "description": "Orlean Group 2020 yilda yaratilgan, biznesni o'zgartirishga qaratilgan."
+        },
+        "mission": {
+          "title": "Bizning misiyasi",
+          "description": "Orlean Group 2020 yilda yaratilgan, biznesni o'zgartirishga qaratilgan."
+        },
+        "vision": {
+          "title": "Bizning viziyasi",
+          "description": "Orlean Group 2020 yilda yaratilgan, biznesni o'zgartirishga qaratilgan."
+        }
       }
     },
     "services": {
       "meta": {
         "title": "Xizmatlar",
         "description": "Xizmatlar"
-      }
+      },
+      "title": "Bizning xizmatlarimiz",
+      "description": "Bizning keng qamrovli xizmatlarimiz sizning biznesingizni qanday transformatsiya qilishga va barqaror o'sishni ta'minlashga yordam berishini bilib oling. Strategik konsultatsiyadan tortib digital transformatsiyagacha, biz sizning muvaffaqiyatingiz uchun to'liq yechimlarni taqdim etamiz.",
+      "services": [
+        {
+          "id": "business-consulting",
+          "title": "Biznes-konsultatsiya",
+          "description": "Operatsiyalarni optimallashtirish va tasdiqlangan metodologiyalar va sanoat tajribasi orqali barqaror o'sishni ta'minlash uchun strategik yo'naltirish.",
+          "features": ["Strategik rejalashtirish", "Bozor tahlili", "Biznes modelini optimallashtirish", "Ishlash samaradorligini yaxshilash", "Xavfni boshqarish"]
+        },
+        {
+          "id": "digital-solutions",
+          "title": "Digital yechimlar",
+          "description": "Shaxsiy dasturiy ta'minotdan tortib to keng qamrovli digital transformatsiya strategiyalarigacha bo'lgan innovatsion digital yechimlar orqali biznesingizni transformatsiya qiling.",
+          "features": ["Shaxsiy dasturiy ta'minot ishlab chiqish", "Digital transformatsiya", "Bulut yechimlari", "Mobil ilovalar", "Sun'iy intellekt va mashina o'rganishi"]
+        },
+        {
+          "id": "process-optimization",
+          "title": "Jarayon optimallashtirish",
+          "description": "Ma'lumotlarga asoslangan jarayon optimallashtirish va doimiy yaxshilash metodologiyalari orqali operatsiyalar samaradorligini oshiring.",
+          "features": ["Jarayon tahlili", "Ish jarayonlarini avtomatlashtirish", "Sifat boshqaruvi", "Ishlash ko'rsatkichlari", "Yetkazib berish zanjirini optimallashtirish"]
+        },
+        {
+          "id": "international-expansion",
+          "title": "Xalqaro kengayish",
+          "description": "Keng qamrovli xalqaro kengayish strategiyalari va mahalliy bozor bilimlari orqali global bozorlarni ishonch bilan o'rganing.",
+          "features": ["Bozorga kirish strategiyasi", "Xalqaro muvofiqlik", "Madaniy moslashish", "Global operatsiyalar", "Chegaralararo yechimlar"]
+        },
+        {
+          "id": "partnership-development",
+          "title": "Hamkorlik rivojlanishi",
+          "description": "Diqqat bilan tanlangan ittifoqlar va qo'shma korxonalar orqali o'sish va innovatsiyalarni rag'batlantiruvchi strategik hamkorliklarni yarating.",
+          "features": ["Strategik ittifoqlar", "Qo'shma korxonalar", "Hamkorlik strategiyasi", "Kanal rivojlanishi", "Strategik tarmoqlar"]
+        },
+        {
+          "id": "financial-advisory",
+          "title": "Moliyaviy maslahat",
+          "description": "Biznes samaradorligini optimallashtirish va barqaror moliyaviy o'sishga erishish uchun ekspert moliyaviy yo'naltirish.",
+          "features": ["Moliyaviy rejalashtirish", "Investitsiya strategiyasi", "Xavfni baholash", "Kapital boshqaruvi", "Moliyaviy tahlil"]
+        },
+        {
+          "id": "technology-consulting",
+          "title": "Texnologiya maslahati",
+          "description": "Tashkilotingizda innovatsiyalarni va digital transformatsiyani rag'batlantirish uchun strategik texnologik yechimlar.",
+          "features": ["IT strategiyasi", "Texnologiyani baholash", "Digital transformatsiya", "Bulutga migratsiya", "Texnologiya yo'l xaritasi"]
+        }
+      ]
     },
     "contact": {
       "meta": {
         "title": "Bog'lanish",
         "description": "Bog'lanish"
+      },
+      "title": "Biz bilan bog'laning, va biz siz bilan bog'lanamiz",
+      "form": {
+        "title-1": "Formani to'ldiring, va ",
+        "title-2": "biz siz bilan bog'lanamiz.",
+        "text": "Yoki biz bilan bog'laning:",
+        "first-name": "Ism",
+        "last-name": "Familiya",
+        "email": "Email",
+        "phone": "Telefon",
+        "message": "Xabar",
+        "send": "Xabar yuborish",
+        "placeholder": {
+          "first-name": "Ismingizni kiriting",
+          "last-name": "Familiyangizni kiriting",
+          "email": "Emailingizni kiriting",
+          "phone": "Telefoningizni kiriting",
+          "message": "Xabaringizni kiriting"
+        }
+      },
+      "messages": {
+        "success": "Xabar muvaffaqiyatli yuborildi",
+        "error": "Xabar yuborishda xatolik yuz berdi"
       }
     },
     "support": {

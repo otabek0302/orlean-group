@@ -1,5 +1,6 @@
 import { Poppins } from 'next/font/google';
 import { Providers } from '@/app/providers';
+import { Toaster } from '@/components/ui/sonner';
 
 import './globals.css';
 
@@ -31,11 +32,18 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+        <link rel="me" href="https://t.me/orlean.group" />
+        <link rel="me" href="https://instagram.com/orlean.group" />
+        <link rel="me" href="https://linkedin.com/company/orlean.group" />
       </head>
       <body className={`${poppins.variable} antialiased`}>
         <Providers>
           <Header />
-          <main className="flex flex-col">{children}</main>
+          <main className="flex flex-col">
+            {children}
+            <Toaster richColors position="bottom-center" />
+          </main>
           <Footer />
         </Providers>
       </body>

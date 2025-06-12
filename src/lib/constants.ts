@@ -89,3 +89,90 @@ export const TESTIMONIALS = [
     role: 'E-commerce Manager',
   },
 ];
+
+export const SERVICES = (t: any) => [
+  {
+    id: 'business-consulting',
+    title: t('pages.services.services.0.title'),
+    description: t('pages.services.services.0.description'),
+    features: [
+      t('pages.services.services.0.features.0'),
+      t('pages.services.services.0.features.1'),
+      t('pages.services.services.0.features.2'),
+      t('pages.services.services.0.features.3'),
+      t('pages.services.services.0.features.4')
+    ]
+  },
+  {
+    id: 'digital-solutions',
+    title: t('pages.services.services.1.title'),
+    description: t('pages.services.services.1.description'),
+    features: [
+      t('pages.services.services.1.features.0'),
+      t('pages.services.services.1.features.1'),
+      t('pages.services.services.1.features.2'),
+      t('pages.services.services.1.features.3'),
+      t('pages.services.services.1.features.4')
+    ]
+  },
+  {
+    id: 'process-optimization',
+    title: t('pages.services.services.2.title'),
+    description: t('pages.services.services.2.description'),
+    features: [
+      t('pages.services.services.2.features.0'),
+      t('pages.services.services.2.features.1'),
+      t('pages.services.services.2.features.2'),
+      t('pages.services.services.2.features.3'),
+      t('pages.services.services.2.features.4')
+    ]
+  },
+  {
+    id: 'international-expansion',
+    title: t('pages.services.services.3.title'),
+    description: t('pages.services.services.3.description'),
+    features: [
+      t('pages.services.services.3.features.0'),
+      t('pages.services.services.3.features.1'),
+      t('pages.services.services.3.features.2'),
+      t('pages.services.services.3.features.3'),
+      t('pages.services.services.3.features.4')
+    ]
+  },
+  {
+    id: 'partnership-development',
+    title: t('pages.services.services.4.title'),
+    description: t('pages.services.services.4.description'),
+    features: [
+      t('pages.services.services.4.features.0'),
+      t('pages.services.services.4.features.1'),
+      t('pages.services.services.4.features.2'),
+      t('pages.services.services.4.features.3'),
+      t('pages.services.services.4.features.4')
+    ]
+  },
+  {
+    id: 'financial-advisory',
+    title: t('pages.services.services.5.title'),
+    description: t('pages.services.services.5.description'),
+    features: [
+      t('pages.services.services.5.features.0'),
+      t('pages.services.services.5.features.1'),
+      t('pages.services.services.5.features.2'),
+      t('pages.services.services.5.features.3'),
+      t('pages.services.services.5.features.4')
+    ]
+  },
+  {
+    id: 'technology-consulting',
+    title: t('pages.services.services.6.title'),
+    description: t('pages.services.services.6.description'),
+    features: [
+      t('pages.services.services.6.features.0'),
+      t('pages.services.services.6.features.1'),
+      t('pages.services.services.6.features.2'),
+      t('pages.services.services.6.features.3'),
+      t('pages.services.services.6.features.4')
+    ]
+  }
+];

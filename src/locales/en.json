@@ -66,21 +66,25 @@
       "contact": {
         "title": "Contact Us",
         "description": "We are here to help you. Contact us for any questions or inquiries.",
-          "form": {
-            "first-name": "First Name",
-            "last-name": "Last Name",
-            "email": "Email Address",
-            "phone": "Phone Number",
-            "message": "Message",
-            "send": "Send Message",
-            "placeholder": {
-              "first-name": "Enter your first name",
-              "last-name": "Enter your last name",
-              "email": "Enter your email address",
-              "phone": "Enter your phone number",
-              "message": "Enter your message"
-            }
+        "form": {
+          "first-name": "First Name",
+          "last-name": "Last Name",
+          "email": "Email Address",
+          "phone": "Phone Number",
+          "message": "Message",
+          "send": "Send Message",
+          "placeholder": {
+            "first-name": "Enter your first name",
+            "last-name": "Enter your last name",
+            "email": "Enter your email address",
+            "phone": "Enter your phone number",
+            "message": "Enter your message"
           }
+        },
+        "messages": {
+          "success": "Message sent successfully",
+          "error": "Message sending failed"
+        }
       },
       "faqs": {
         "title": "This is the start of something new, let's make it happen",
@@ -110,12 +114,12 @@
           {
             "id": "5",
             "title": "How can I get started or request a quote ?",
-            "content": "You can contact us through our website's contact form, email us at hello@orlean.uz, or schedule a discovery call with one of our consultants. We’ll listen to your needs and provide a tailored proposal within 24–48 hours."
+            "content": "You can contact us through our website's contact form, email us at hello@orlean.uz, or schedule a discovery call with one of our consultants. We'll listen to your needs and provide a tailored proposal within 24–48 hours."
           },
           {
             "id": "6",
             "title": "How can I get started or request a quote ?",
-            "content": "You can contact us through our website's contact form, email us at hello@orlean.uz, or schedule a discovery call with one of our consultants. We’ll listen to your needs and provide a tailored proposal within 24–48 hours."
+            "content": "You can contact us through our website's contact form, email us at hello@orlean.uz, or schedule a discovery call with one of our consultants. We'll listen to your needs and provide a tailored proposal within 24–48 hours."
           }
         ]
       }
@@ -124,18 +128,108 @@
       "meta": {
         "title": "About Us",
         "description": "About Orlean Group"
+      },
+      "title": "This is the start of something new, let's make it happen",
+      "description": "Managing a small business today is already tough. Avoid further complications by ditching outdated, tedious trade methods. Our goal is to streamline SMB trade, making it easier and faster than ever.",
+      "buttons": {
+        "contact": "Contact Us",
+        "services": "Our Services"
+      },
+      "content": {
+        "text": "We are more than just a technology company; we are a dynamic ecosystem where innovation, expertise, and digital transformation converge to drive business success.",
+        "story": {
+          "title": "Our Story",
+          "description": "Orlean Group was founded in 2020 with a vision to transform the food industry through innovative solutions and sustainable practices."
+        },
+        "mission": {
+          "title": "Our Mission",
+          "description": "Orlean Group was founded in 2020 with a vision to transform the food industry through innovative solutions and sustainable practices."
+        },
+        "vision": {
+          "title": "Our Vision",
+          "description": "Orlean Group was founded in 2020 with a vision to transform the food industry through innovative solutions and sustainable practices."
+        }
       }
     },
     "services": {
       "meta": {
         "title": "Services",
         "description": "Services provided by Orlean Group"
-      }
+      },
+      "title": "Our Services",
+      "description": "Discover how our comprehensive services can help transform your business and drive sustainable growth. From strategic consulting to digital transformation, we provide end-to-end solutions for your success.",
+      "services": [
+        {
+          "id": "business-consulting",
+          "title": "Business Consulting",
+          "description": "Strategic guidance to optimize operations and drive sustainable growth through proven methodologies and industry expertise.",
+          "features": ["Strategic Planning", "Market Analysis", "Business Model Optimization", "Performance Improvement", "Risk Management"]
+        },
+        {
+          "id": "digital-solutions",
+          "title": "Digital Solutions",
+          "description": "Transform your business with innovative digital solutions, from custom software to comprehensive digital transformation strategies.",
+          "features": ["Custom Software Development", "Digital Transformation", "Cloud Solutions", "Mobile Applications", "AI & Machine Learning"]
+        },
+        {
+          "id": "process-optimization",
+          "title": "Process Optimization",
+          "description": "Streamline operations and enhance efficiency through data-driven process optimization and continuous improvement methodologies.",
+          "features": ["Process Analysis", "Workflow Automation", "Quality Management", "Performance Metrics", "Supply Chain Optimization"]
+        },
+        {
+          "id": "international-expansion",
+          "title": "International Expansion",
+          "description": "Navigate global markets with confidence through comprehensive international expansion strategies and local market expertise.",
+          "features": ["Market Entry Strategy", "International Compliance", "Cultural Adaptation", "Global Operations", "Cross-border Solutions"]
+        },
+        {
+          "id": "partnership-development",
+          "title": "Partnership Development",
+          "description": "Build strategic partnerships that drive growth and innovation through carefully curated alliances and joint ventures.",
+          "features": ["Strategic Alliances", "Joint Ventures", "Partnership Strategy", "Channel Development", "Strategic Networking"]
+        },
+        {
+          "id": "financial-advisory",
+          "title": "Financial Advisory",
+          "description": "Expert financial guidance to optimize your business performance and achieve sustainable financial growth.",
+          "features": ["Financial Planning", "Investment Strategy", "Risk Assessment", "Wealth Management", "Financial Analysis"]
+        },
+        {
+          "id": "technology-consulting",
+          "title": "Technology Consulting",
+          "description": "Strategic technology solutions to drive innovation and digital transformation in your organization.",
+          "features": ["IT Strategy", "Technology Assessment", "Digital Transformation", "Cloud Migration", "Technology Roadmap"]
+        }
+      ]
     },
     "contact": {
       "meta": {
         "title": "Contact Us",
         "description": "Contact Orlean Group"
+      },
+      "title": "Reach out to us, and our friendly team will get back to you as soon as possible.",
+      "form": {
+        "title-1": "Fill out the form, and ",
+        "title-2": "we'll get back to you soon.",
+        "text": "Or reach us directly:",
+        "first-name": "First Name",
+        "last-name": "Last Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "message": "Message",
+        "send": "Send Message",
+        "placeholder": {
+          "first-name": "Enter your first name",
+          "last-name": "Enter your last name",
+          "email": "Enter your email address",
+          "phone": "Enter your phone number",
+          "message": "Enter your message"
+        }
+      },
+      "messages": {
+        "success": "Message sent successfully",
+        "error": "Message sending failed"
       }
     },
     "support": {

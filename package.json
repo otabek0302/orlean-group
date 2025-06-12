@@ -36,6 +36,7 @@
     "react-dom": "^19.0.0",
     "react-i18next": "^15.5.2",
     "react-use-measure": "^2.1.7",
+    "sonner": "^2.0.5",
     "svg-path-commander": "^2.1.11",
     "tailwind-merge": "^3.3.0"
   },

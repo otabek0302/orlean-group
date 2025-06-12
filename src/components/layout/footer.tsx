@@ -19,7 +19,7 @@ const Footer = () => {
           <div className="flex flex-col items-start justify-between space-y-3 rounded-3xl border px-8 py-8 sm:px-10 md:flex-row md:items-center md:space-y-0">
             <h3 className="text-copy-title flex-1 text-2xl leading-normal font-normal">{t('components.footer.title')}</h3>
             <Button variant="outline" asChild className="group bg-primary border-primary h-fit cursor-pointer rounded-xl border-1 px-2.5 py-2.5 transition-all duration-300 hover:bg-transparent lg:px-3.5">
-              <Link href="tel:">
+              <Link href="tel:+998933300444">
                 <Phone className="group-hover:text-primary mr-1 h-4 w-4 text-white" />
                 <span className="group-hover:text-primary text-base leading-normal font-normal text-white">{t('components.footer.button')}</span>
               </Link>
