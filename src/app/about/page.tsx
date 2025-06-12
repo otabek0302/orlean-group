@@ -9,9 +9,22 @@ import { useTranslation } from 'react-i18next';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { AboutImage, AboutImage1, AboutImage2, AboutImage3 } from '@/assets';
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
+import { Loading } from '@/components/ui/loading';
 
 const About = () => {
   const { t } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <>

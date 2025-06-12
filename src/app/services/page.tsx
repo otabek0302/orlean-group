@@ -4,9 +4,11 @@ import { useEffect, useRef, useState } from 'react';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import { SERVICES } from '@/lib/constants';
 import { useTranslation } from 'react-i18next';
-
+import { Loading } from '@/components/ui/loading';
+  
 const Services = () => {
   const { t } = useTranslation();
+  const [isLoading, setIsLoading] = useState(true);
   const ref = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const services = SERVICES(t);
@@ -27,6 +29,16 @@ const Services = () => {
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
   const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
+  if (isLoading) {
+    return <Loading />;
+  }
 
   return (
     <div className="min-h-screen w-full overflow-y-auto bg-white dark:bg-neutral-950">
