@@ -45,22 +45,22 @@ export const MobileMenu = () => {
       <motion.div className={`bg-background border dark:border-input ${!open && 'dark:border-none'} absolute z-10 overflow-hidden rounded-xl ${open ? 'bg-primary dark:bg-background' : ''}`} variants={menu} animate={open ? 'open' : 'closed'} initial="closed">
         {open && (
           <motion.ul className="flex h-full w-full flex-col justify-center gap-5 p-5">
-            <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-copy-title capitalize ${pathname == '/' ? 'border-primary' : 'border-transparent'} text-start`} onClick={() => setOpen(false)}>
+            <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-white capitalize ${pathname == '/' ? 'border-white' : 'border-transparent'} text-start`} onClick={() => setOpen(false)}>
               <Link href="/" className="px-1">
                 {t('home')}
               </Link>
             </motion.li>
-            <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-copy-title capitalize ${pathname == '/about' ? 'border-primary' : 'border-transparent'} text-start`} onClick={() => setOpen(false)}>
+            <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-white capitalize ${pathname == '/about' ? 'border-white' : 'border-transparent'} text-start`} onClick={() => setOpen(false)}>
               <Link href="/" className="px-1">
                 {t('about')}
               </Link>
             </motion.li>
-            <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-copy-title capitalize ${pathname == '/services' ? 'border-primary' : 'border-transparent'} text-start`} onClick={() => setOpen(false)}>
+            <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-white capitalize ${pathname == '/services' ? 'border-white' : 'border-transparent'} text-start`} onClick={() => setOpen(false)}>
               <Link href="/" className="px-1">
                 {t('services')}
               </Link>
             </motion.li>
-            <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-copy-title capitalize ${pathname == '/contact' ? 'border-primary' : 'border-transparent'} text-start`} onClick={() => setOpen(false)}>
+            <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-white capitalize ${pathname == '/contact' ? 'border-white' : 'border-transparent'} text-start`} onClick={() => setOpen(false)}>
               <Link href="/" className="px-1">
                 {t('contact')}
               </Link>
@@ -70,13 +70,13 @@ export const MobileMenu = () => {
                 <Button variant="outline" size="icon" className="group border-primary dark:border-primary hover:bg-primary h-9 w-9 cursor-pointer rounded-lg lg:rounded-xl lg:h-10 lg:w-10 shadow-none">
                   <Mail className="text-primary dark:text-white h-4 w-4 lg:h-5 lg:w-5 group-hover:text-white" />
                 </Button>
-                <span className="text-sm font-bold text-copy-title">info@orlean.uz</span>
+                <span className="text-sm font-bold text-white">info@orlean.uz</span>
               </div>
               <div className="flex items-center gap-2">
                 <Button variant="outline" size="icon" className="group border-primary dark:border-primary hover:bg-primary h-9 w-9 cursor-pointer rounded-lg lg:rounded-xl lg:h-10 lg:w-10 shadow-none">
                   <Phone className="text-primary dark:text-white h-4 w-4 lg:h-5 lg:w-5 group-hover:text-white" />
                 </Button>
-                <span className="text-sm font-bold text-copy-title">+998 90 123 45 67</span>
+                <span className="text-sm font-bold text-white">+998 90 123 45 67</span>
               </div>
             </div>
           </motion.ul>
