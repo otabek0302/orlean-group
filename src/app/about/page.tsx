@@ -5,7 +5,6 @@ import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
 import { MoveRight, Phone } from 'lucide-react';
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { AboutImage, AboutImage1, AboutImage2, AboutImage3 } from '@/assets';
@@ -13,11 +12,6 @@ import { motion } from 'framer-motion';
 
 const About = () => {
   const { t } = useTranslation();
-  const [expandedSection, setExpandedSection] = useState<string | null>(null);
-
-  const toggleSection = (section: string) => {
-    setExpandedSection(expandedSection === section ? null : section);
-  };
 
   return (
     <>
