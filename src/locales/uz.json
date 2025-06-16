@@ -2,8 +2,8 @@
   "pages": {
     "home": {
       "meta": {
-        "title": "Orlean Group",
-        "description": "Orlean Group - Your trusted partner in the food industry"
+        "title": "Orlean Group - IT va Marketing Agentligi",
+        "description": "Orlean Group - IT yechimlar, digital marketing va biznes konsultatsiyasida ishonchli hamkoringiz"
       },
       "hero": {
         "title": "Professional mutaxassislar sizning biznesingizni o'sish va noyob muammolardan o'tkazib beradi.",
@@ -126,8 +126,8 @@
     },
     "about": {
       "meta": {
-        "title": "Biz haqimizda",
-        "description": "Biz haqimizda"
+        "title": "Orlean Group haqida - IT va Marketing Agentligi",
+        "description": "Orlean Group'ning innovatsion IT va marketing yechimlari orqali biznesni transformatsiya qilishdagi missiyasi, viziyasi va yo'li haqida bilib oling"
       },
       "title": "Yangi narsa boshlanishi, buni qilamiz",
       "description": "Kichik biznesni hozirda qiyin. Qo'shimcha murakkabliklarni oldini olish uchun eski, qiyinlashgan savdo usullarini tashlab yuboring. Bizning maqsadimiz - SMB savdoini soddalashtirish, uni hozirgi zamon bo'yicha oson va tezroq qilish.",
@@ -153,8 +153,8 @@
     },
     "services": {
       "meta": {
-        "title": "Xizmatlar",
-        "description": "Xizmatlar"
+        "title": "Bizning Xizmatlarimiz - Orlean Group",
+        "description": "Sizning ehtiyojlaringizga moslashtirilgan IT xizmatlari, digital yechimlar va biznes konsultatsiya xizmatlarimizning keng doirasini o'rganing"
       },
       "title": "Bizning xizmatlarimiz",
       "description": "Bizning keng qamrovli xizmatlarimiz sizning biznesingizni qanday transformatsiya qilishga va barqaror o'sishni ta'minlashga yordam berishini bilib oling. Strategik konsultatsiyadan tortib digital transformatsiyagacha, biz sizning muvaffaqiyatingiz uchun to'liq yechimlarni taqdim etamiz.",
@@ -205,8 +205,8 @@
     },
     "contact": {
       "meta": {
-        "title": "Bog'lanish",
-        "description": "Bog'lanish"
+        "title": "Orlean Group bilan bog'lanish",
+        "description": "IT yechimlar, digital marketing va biznes konsultatsiya xizmatlari uchun Orlean Group bilan bog'laning"
       },
       "title": "Biz bilan bog'laning, va biz siz bilan bog'lanamiz",
       "form": {
@@ -234,20 +234,114 @@
     },
     "support": {
       "meta": {
-        "title": "Yordam",
-        "description": "Yordam"
+        "title": "Yordam - Orlean Group",
+        "description": "Orlean Group'ning xizmatlari va yechimlari uchun texnik yordam va ko'mak oling"
       }
     },
     "privacyPolicy": {
       "meta": {
-        "title": "Maxfiylik siyosati",
-        "description": "Maxfiylik siyosati"
+        "title": "Maxfiylik Siyosati - Orlean Group",
+        "description": "Ma'lumotlaringizni qanday boshqaramiz va himoya qilishimizni tushunish uchun Orlean Group'ning maxfiylik siyosatini o'qing"
+      },
+      "title": "Maxfiylik siyosati",
+      "sections": {
+        "introduction": {
+          "title": "Kirish",
+          "content": "Bu Maxfiylik siyosati bizning veb-saytimiz va xizmatlarimizdan foydalanganingizda shaxsiy ma'lumotlaringizni qanday to'plash, ishlatish va boshqarishni tavsiflaydi. Biz sizning maxfiyligingizni himoya qilish va saytimizda ijobiy tajriba o'tkazishga intilamiz."
+        },
+        "information": {
+          "title": "Biz to'playdigan ma'lumotlar",
+          "subtitle": "Biz siz to'g'ridan-to'g'ri taqdim etgan ma'lumotlarni to'playmiz, jumladan:",
+          "items": {
+            "name": "Ism va aloqa ma'lumotlari",
+            "credentials": "Hisob ma'lumotlari",
+            "payment": "To'lov ma'lumotlari",
+            "preferences": "Aloqa sozlamalari"
+          }
+        },
+        "usage": {
+          "title": "Ma'lumotlaringizni qanday ishlatamiz",
+          "subtitle": "Biz to'plangan ma'lumotlarni quyidagi maqsadlarda ishlatamiz:",
+          "items": {
+            "services": "Xizmatlarimizni ta'minlash va saqlash",
+            "transactions": "Tranzaktsiyalaringizni bajarish",
+            "notices": "Texnik xabarnomalar va qo'llab-quvvatlash xabarlarini yuborish",
+            "communication": "Mahsulotlar, xizmatlar va tadbirlar haqida siz bilan aloqa qilish",
+            "improvement": "Veb-saytimiz va xizmatlarimizni yaxshilash"
+          }
+        },
+        "security": {
+          "title": "Ma'lumotlar xavfsizligi",
+          "content": "Biz sizning shaxsiy ma'lumotlaringizni ruxsatsiz kirish, o'zgartirish, oshkor qilish yoki yo'q qilishdan himoya qilish uchun tegishli texnik va tashkiliy choralarni qo'llaymiz."
+        },
+        "rights": {
+          "title": "Sizning huquqlaringiz",
+          "subtitle": "Siz quyidagi huquqlarga egasiz:",
+          "items": {
+            "access": "Shaxsiy ma'lumotlaringizga kirish",
+            "correct": "Noto'g'ri ma'lumotlarni tuzatish",
+            "delete": "Ma'lumotlaringizni o'chirishni so'rash",
+            "object": "Ma'lumotlaringizni qayta ishlashga e'tiroz bildirish",
+            "portability": "Ma'lumotlarni ko'chirish huquqi"
+          }
+        }
       }
     },
     "termsOfService": {
       "meta": {
-        "title": "Shartlar va shartlar",
-        "description": "Shartlar va shartlar"
+        "title": "Xizmat Ko'rsatish Shartlari - Orlean Group",
+        "description": "Orlean Group'ning IT va marketing xizmatlaridan foydalanish shartlarini ko'rib chiqing"
+      },
+      "title": "Shartlar va shartlar",
+      "sections": {
+        "agreement": {
+          "title": "1. Shartlarga rozilik",
+          "content": "Ushbu veb-saytdan foydalanish orqali siz ushbu shartnomaning shartlari va qoidalariga rioya qilishni qabul qilasiz va ularga bo'ysunasiz."
+        },
+        "license": {
+          "title": "2. Foydalanish litsenziyasi",
+          "content": "Ruxsat bizning veb-saytimizdagi materiallarga (ma'lumot yoki dasturiy ta'minot) shaxsiy, tijoriy bo'lmagan vaqtinchalik ko'rish uchun beriladi.",
+          "subtitle": "Bu litsenziya berish, mulk huquqini o'tkazish emas, va ushbu litsenziya bo'yicha siz quyidagilarni qila olmaysiz:",
+          "items": {
+            "modify": "Materiallarni o'zgartirish yoki nusxa ko'chirish",
+            "commercial": "Materiallarni tijoriy maqsadlarda ishlatish",
+            "reverse": "Veb-saytda joylashgan har qanday dasturiy ta'minotni dekompilyatsiya qilish yoki teskari muhandislik qilishga harakat qilish",
+            "copyright": "Materiallardan mualliflik huquqi yoki boshqa mulk belgilarini olib tashlash"
+          }
+        },
+        "account": {
+          "title": "3. Foydalanuvchi hisobi",
+          "content": "Agar siz veb-saytda hisob yaratasiz, siz o'z hisobingizning xavfsizligini ta'minlash uchun mas'ulsiz va ushbu hisob ostida sodir bo'ladigan barcha harakatlar uchun to'liq javobgarsiz.",
+          "items": {
+            "security": "Hisobingiz va parolingizning xavfsizligini ta'minlash",
+            "accuracy": "Hisob yaratishda aniq va to'liq ma'lumot berish",
+            "notify": "Hisobingizning ruxsatsiz ishlatilishi haqida bizni darhol xabardor qilish"
+          }
+        },
+        "disclaimer": {
+          "title": "4. Mas'uliyatdan voz kechish",
+          "content": "Bizning veb-saytimizdagi materiallar 'boricha' asosida taqdim etiladi. Biz hech qanday kafolat bermaymiz, ochiq yoki nazarda tutilgan, va shu orqali barcha boshqa kafolatlardan voz kechamiz, shu jumladan, cheklovsiz, nazarda tutilgan kafolatlar yoki savdo qobiliyati, ma'lum bir maqsad uchun moslik yoki intellektual mulk huquqini buzmaslik shartlari."
+        },
+        "limitations": {
+          "title": "5. Cheklovlar",
+          "content": "Hech qanday holatda biz yoki bizning yetkazib beruvchilarimiz veb-saytimizdagi materiallardan foydalanish yoki foydalana olmaslik natijasida yuzaga keladigan har qanday zarar uchun (shu jumladan, cheklovsiz, ma'lumot yoki foydani yo'qotish uchun zarar, yoki biznesning to'xtab qolishi tufayli) javobgar emas."
+        },
+        "revisions": {
+          "title": "6. Qayta ko'rib chiqish va xatolar",
+          "content": "Bizning veb-saytimizda paydo bo'ladigan materiallar texnik, tipografik yoki fotografik xatolarni o'z ichiga olishi mumkin. Biz veb-saytimizdagi har qanday materiallar aniq, to'liq yoki zamonaviy ekanligini kafolatlamaymiz."
+        },
+        "links": {
+          "title": "7. Havolalar",
+          "content": "Biz veb-saytimizga bog'langan barcha saytlarni ko'rib chiqmaganmiz va bunday bog'langan saytning mazmuni uchun javobgar emasmiz. Har qanday havolani kiritish bizning saytni ma'qullashimizni anglatmaydi."
+        },
+        "modifications": {
+          "title": "8. O'zgartirishlar",
+          "content": "Biz veb-saytimiz uchun ushbu xizmat shartlarini oldindan ogohlantirmasdan istalgan vaqtda qayta ko'rib chiqishimiz mumkin. Ushbu veb-saytdan foydalanish orqali siz ushbu xizmat shartlarining o'sha paytdagi versiyasiga bo'ysunishni qabul qilasiz."
+        },
+        "law": {
+          "title": "9. Qo'llaniladigan qonun",
+          "content": "Ushbu shartlar va qoidalar qonunlar bilan tartibga solingan va talqin qilingan va siz o'sha joydagi sudlarning eksklyuziv yurisdiktsiyasiga qayta tiklanmasdan bo'ysunasiz."
+        }
       }
     },
     "not-found": {
@@ -276,6 +370,32 @@
         "support": "Yordam",
         "terms-of-service": "Shartlar va shartlar",
         "privacy-policy": "Maxfiylik siyosati"
+      }
+    },
+    "cookie-consent": {
+      "title": "Cookie sozlamalari",
+      "description": "Sayohatingizni yaxshilash, shaxsiy kontent taqdim etish va trafikimizni tahlil qilish uchun cookie fayllaridan foydalanamiz. \"Barchasini qabul qilish\" tugmasini bosish orqali siz cookie fayllarimizdan foydalanishga rozilik berasiz.",
+      "privacy-policy": "Maxfiylik siyosatimizni o'qing",
+      "buttons": {
+        "show-details": "Tafsilotlarni ko'rsatish",
+        "hide-details": "Tafsilotlarni yashirish",
+        "accept-all": "Barchasini qabul qilish",
+        "close": "Yopish",
+        "save-preferences": "Sozlamalarni saqlash"
+      },
+      "cookies": {
+        "necessary": {
+          "title": "Zarur cookie fayllari",
+          "description": "Veb-saytning to'g'ri ishlashi uchun zarur. O'chirib bo'lmaydi."
+        },
+        "analytics": {
+          "title": "Analitik cookie fayllari",
+          "description": "Tashrif buyuruvchilar veb-saytimiz bilan qanday o'zaro aloqada bo'lishini tushunishimizga yordam beradi."
+        },
+        "marketing": {
+          "title": "Marketing cookie fayllari",
+          "description": "Marketing maqsadlarida turli veb-saytlardagi tashrif buyuruvchilarni kuzatish uchun ishlatiladi."
+        }
       }
     }
   }

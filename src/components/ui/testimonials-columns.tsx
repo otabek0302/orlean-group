@@ -8,7 +8,7 @@ export const TestimonialsColumn = (props: { className?: string; testimonials: an
     <div className={props.className}>
       <motion.div
         animate={{
-          translateY: '-50%',
+          y: '-50%',
         }}
         transition={{
           duration: props.duration || 10,

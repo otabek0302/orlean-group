@@ -41,7 +41,7 @@ const Footer = () => {
                     <Link href={`/`}>{t('components.footer.links.home')}</Link>
                   </li>
                   <li className="text-copy-title hover:text-primary cursor-pointer text-base leading-normal font-normal transition-all duration-300 md:text-lg">
-                    <Link href={`/about-us`}>{t('components.footer.links.about')}</Link>
+                    <Link href={`/about`}>{t('components.footer.links.about')}</Link>
                   </li>
                   <li className="text-copy-title hover:text-primary cursor-pointer text-base leading-normal font-normal transition-all duration-300 md:text-lg">
                     <Link href={`/services`}>{t('components.footer.links.services')}</Link>

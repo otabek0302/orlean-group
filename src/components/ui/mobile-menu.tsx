@@ -16,7 +16,7 @@ const menu = {
     height: '320px',
     top: '-12px',
     right: '-12px',
-    transition: { duration: 0.75, type: 'tween', ease: [0.76, 0, 0.24, 1] },
+    transition: { duration: 0.75, type: 'tween' as const, ease: [0.76, 0, 0.24, 1] as const },
   },
   closed: {
     width: '20px',
@@ -26,8 +26,8 @@ const menu = {
     transition: {
       duration: 0.75,
       delay: 0.35,
-      type: 'tween',
-      ease: [0.76, 0, 0.24, 1],
+      type: 'tween' as const,
+      ease: [0.76, 0, 0.24, 1] as const,
     },
   },
 };
@@ -57,7 +57,7 @@ export const MobileMenu = () => {
               </Link>
             </motion.li>
             <motion.li className={`block cursor-pointer border-l-4 text-base font-bold text-white capitalize ${pathname == '/about' ? 'border-white' : 'border-transparent'} text-start`} onClick={() => handleClick('/about')}>
-              <Link href="/" className="px-1">
+              <Link href="/about" className="px-1">
                 {t('components.header.about')}
               </Link>
             </motion.li>

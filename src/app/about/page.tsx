@@ -8,7 +8,6 @@ import { MoveRight, Phone } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import { AboutImage, AboutImage1, AboutImage2, AboutImage3 } from '@/assets';
-import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { Loading } from '@/components/ui/loading';
 
@@ -19,7 +18,7 @@ const About = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 1000);
   }, []);
 
   if (isLoading) {
@@ -33,7 +32,7 @@ const About = () => {
           <div className="flex flex-col lg:flex-row">
             <div className="w-full py-10 lg:py-20">
               <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
-                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4">
                   <div className="flex flex-col gap-4">
                     <h2 className="text-copy-title max-w-2xl text-left text-4xl font-bold tracking-normal min-[380px]:text-5xl lg:text-6xl dark:text-white">{t('pages.about.title')}</h2>
                     <p className="text-copy-text max-w-md text-left text-base leading-relaxed tracking-tight min-[380px]:text-lg md:pl-1 lg:text-xl dark:text-neutral-300">{t('pages.about.description')}</p>
@@ -52,8 +51,8 @@ const About = () => {
                       </Link>
                     </Button>
                   </div>
-                </motion.div>
-                <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.2 }} className="grid grid-cols-2 gap-4">
+                </div>
+                <div className="grid grid-cols-2 gap-4">
                   <div className="bg-muted relative aspect-square overflow-hidden rounded-xl transition-transform duration-300 hover:scale-105 dark:bg-neutral-800">
                     <Image src={AboutImage1} alt="about-1" fill priority className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                   </div>
@@ -63,7 +62,7 @@ const About = () => {
                   <div className="bg-muted relative aspect-square overflow-hidden rounded-xl transition-transform duration-300 hover:scale-105 dark:bg-neutral-800">
                     <Image src={AboutImage3} alt="about-3" fill priority className="object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
                   </div>
-                </motion.div>
+                </div>
               </div>
             </div>
           </div>
@@ -72,12 +71,12 @@ const About = () => {
       <section id="about-content" className="py-6 md:py-10 lg:py-20">
         <div className="container px-4">
           <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-3">
-            <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} className="relative col-span-2 h-72 md:h-full">
+            <div className="relative col-span-2 h-72 md:h-full">
               <div className="relative h-full w-full overflow-hidden rounded-[32px] transition-all duration-300">
                 <Image src={AboutImage} alt="about" fill priority className="object-cover object-center" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
-            </motion.div>
-            <motion.div initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5, delay: 0.2 }} className="space-y-6 py-5 md:py-10 lg:py-20">
+            </div>
+            <div className="space-y-6 py-5 md:py-10 lg:py-20">
               <div className="space-y-4">
                 <p className="text-copy-text text-base leading-relaxed min-[380px]:text-lg lg:text-xl dark:text-neutral-300">{t('pages.about.content.text')}</p>
               </div>
@@ -115,7 +114,7 @@ const About = () => {
                   </AccordionItem>
                 </Accordion>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>

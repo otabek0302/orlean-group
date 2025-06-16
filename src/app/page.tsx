@@ -8,10 +8,10 @@ import { useTranslation } from 'react-i18next';
 import { Box, Lock, Phone, Search, Settings, Sparkles } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
-import { HeroImage } from '@/assets';
 import { InfiniteSlider } from '@/components/ui/infinite-slider';
 import { ProgressiveBlur } from '@/components/ui/progressive-blur';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { HeroImage, ContactImage } from '@/assets';
 import { FAQS, TESTIMONIALS } from '@/lib/constants';
 import { GridItem } from '@/components/ui/grid-item';
 import { TestimonialsColumn } from '@/components/ui/testimonials-columns';
@@ -23,6 +23,7 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { ArrowRight } from 'lucide-react';
 import { toast } from 'sonner';
+import { PartnersLogo } from '@/components/ui/partners-logo';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -107,7 +108,7 @@ export default function Home() {
                   </Link>
                 </Button>
               </div>
-              <div className="mt-6 hidden gap-4 lg:flex lg:gap-6 xl:gap-16">
+              {/* <div className="mt-6 hidden gap-4 lg:flex lg:gap-6 xl:gap-16">
                 <div>
                   <span className="text-3xl font-black text-white lg:text-5xl">20+</span>
                   <h2 className="text-xs font-normal text-white/80 uppercase lg:text-lg">{t('pages.home.hero.features.partners')}</h2>
@@ -120,7 +121,7 @@ export default function Home() {
                   <span className="text-3xl font-black text-white lg:text-5xl">22+</span>
                   <h2 className="text-xs font-normal text-white/80 uppercase lg:text-lg">{t('pages.home.hero.features.clients')}</h2>
                 </div>
-              </div>
+              </div> */}
             </div>
 
             {/* Right Side: Image */}
@@ -135,31 +136,8 @@ export default function Home() {
       <section id="partners" className="py-6 md:py-10 lg:py-20">
         <div className="container px-4">
           <div className="relative py-4">
-            <InfiniteSlider durationOnHover={80} duration={60} gap={80} className="w-full min-[380px]:gap-12">
-              <div className="relative flex h-10 w-16 min-[380px]:h-16 min-[380px]:w-20">
-                <Image src="https://html.tailus.io/blocks/customers/nvidia.svg" alt="Nvidia Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-              </div>
-              <div className="relative flex h-10 w-16 min-[380px]:h-16 min-[380px]:w-20">
-                <Image src="https://html.tailus.io/blocks/customers/column.svg" alt="Column Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-              </div>
-              <div className="relative flex h-10 w-16 min-[380px]:h-16 min-[380px]:w-20">
-                <Image src="https://html.tailus.io/blocks/customers/github.svg" alt="GitHub Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-              </div>
-              <div className="relative flex h-10 w-16 min-[380px]:h-16 min-[380px]:w-20">
-                <Image src="https://html.tailus.io/blocks/customers/nike.svg" alt="Nike Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-              </div>
-              <div className="relative flex h-10 w-16 min-[380px]:h-16 min-[380px]:w-20">
-                <Image src="https://html.tailus.io/blocks/customers/lemonsqueezy.svg" alt="Lemon Squeezy Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-              </div>
-              <div className="relative flex h-10 w-16 min-[380px]:h-16 min-[380px]:w-20">
-                <Image src="https://html.tailus.io/blocks/customers/laravel.svg" alt="Laravel Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-              </div>
-              <div className="relative flex h-10 w-16 min-[380px]:h-16 min-[380px]:w-20">
-                <Image src="https://html.tailus.io/blocks/customers/lilly.svg" alt="Lilly Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-              </div>
-              <div className="relative flex h-10 w-16 min-[380px]:h-16 min-[380px]:w-20">
-                <Image src="https://html.tailus.io/blocks/customers/openai.svg" alt="OpenAI Logo" fill priority className="mx-auto h-5 w-fit dark:invert" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-              </div>
+            <InfiniteSlider durationOnHover={400} duration={300} gap={10} className="w-full min-[380px]:gap-12">
+              <PartnersLogo />
             </InfiniteSlider>
 
             <div className="from-background absolute inset-y-0 left-0 w-20 bg-linear-to-r"></div>
@@ -261,7 +239,7 @@ export default function Home() {
             {/* Right Side: Image */}
             <div className="flex-1 p-4">
               <div className="relative h-full overflow-hidden rounded-[26px]">
-                <Image src={HeroImage} alt="contact-image" fill priority className="h-full w-full object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
+                <Image src={ContactImage} alt="contact-image" fill priority className="h-full w-full object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
               </div>
             </div>
           </div>

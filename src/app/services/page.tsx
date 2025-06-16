@@ -5,7 +5,7 @@ import { useScroll, useTransform, motion } from 'framer-motion';
 import { SERVICES } from '@/lib/constants';
 import { useTranslation } from 'react-i18next';
 import { Loading } from '@/components/ui/loading';
-  
+
 const Services = () => {
   const { t } = useTranslation();
   const [isLoading, setIsLoading] = useState(true);
@@ -15,16 +15,45 @@ const Services = () => {
 
   const [height, setHeight] = useState(0);
 
-  useEffect(() => {
+  const updateHeight = () => {
     if (ref.current) {
       const rect = ref.current.getBoundingClientRect();
       setHeight(rect.height);
     }
+  };
+
+  useEffect(() => {
+    // Initial height calculation with a small delay to ensure content is rendered
+    const initialTimer = setTimeout(updateHeight, 100);
+
+    // Update height on resize
+    window.addEventListener('resize', updateHeight);
+
+    // Create a ResizeObserver to watch for content changes
+    const resizeObserver = new ResizeObserver(updateHeight);
+    if (ref.current) {
+      resizeObserver.observe(ref.current);
+    }
+
+    return () => {
+      clearTimeout(initialTimer);
+      window.removeEventListener('resize', updateHeight);
+      resizeObserver.disconnect();
+    };
   }, [ref]);
+
+  // Update height when loading state changes
+  useEffect(() => {
+    if (!isLoading) {
+      // Small delay to ensure content is rendered after loading
+      const timer = setTimeout(updateHeight, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [isLoading]);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ['start 10%', 'end 50%'],
+    offset: ['start 20%', 'end 50%'],
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
@@ -76,18 +105,8 @@ const Services = () => {
                   </div>
                 </div>
               ))}
-              <div
-                style={{
-                  height: height + 'px',
-                }}
-                className="absolute top-0 left-8 w-[2px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] md:left-8 dark:via-neutral-700">
-                <motion.div
-                  style={{
-                    height: heightTransform,
-                    opacity: opacityTransform,
-                  }}
-                  className="absolute inset-x-0 top-0 w-[2px] rounded-full bg-gradient-to-t from-purple-500 from-[0%] via-blue-500 via-[10%] to-transparent"
-                />
+              <div style={{ height: height + 'px' }} className="absolute top-0 left-8 w-[2px] overflow-hidden bg-[linear-gradient(to_bottom,var(--tw-gradient-stops))] from-transparent from-[0%] via-neutral-200 to-transparent to-[99%] [mask-image:linear-gradient(to_bottom,transparent_0%,black_10%,black_90%,transparent_100%)] md:left-8 dark:via-neutral-700">
+                <motion.div style={{ height: heightTransform, opacity: opacityTransform }} className="absolute inset-x-0 top-0 w-[2px] rounded-full bg-gradient-to-t from-purple-500 from-[0%] via-blue-500 via-[10%] to-transparent" />
               </div>
             </div>
           </div>
