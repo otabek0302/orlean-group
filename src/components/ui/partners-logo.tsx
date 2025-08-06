@@ -74,9 +74,9 @@ export const PartnersLogo = () => {
       <div className="flex h-[100px] w-[200px] items-center justify-center">
         <Image src={Centerm} alt="Centerm" width={100} height={50} className="dark:invert" />
       </div>
-      <div className="flex h-[100px] w-[200px] items-center justify-center">
+      {/* <div className="flex h-[100px] w-[200px] items-center justify-center">
         <Image src={Cisco} alt="Cisco" width={100} height={50} className="dark:invert" />
-      </div>
+      </div> */}
       <div className="flex h-[100px] w-[200px] items-center justify-center">
         <Image src={Cloudbric} alt="Cloudbric" width={100} height={50} className="dark:invert" />
       </div>
@@ -92,15 +92,15 @@ export const PartnersLogo = () => {
       <div className="flex h-[100px] w-[200px] items-center justify-center">
         <Image src={Ddn} alt="Ddn" width={100} height={50} className="dark:invert" />
       </div>
-      <div className="flex h-[100px] w-[200px] items-center justify-center">
+      {/* <div className="flex h-[100px] w-[200px] items-center justify-center">
         <Image src={Dell} alt="Dell" width={100} height={50} className="dark:invert" />
-      </div>
+      </div> */}
       <div className="flex h-[100px] w-[200px] items-center justify-center">
         <Image src={Delta} alt="Delta" width={100} height={50} className="dark:invert" />
       </div>
-      <div className="flex h-[100px] w-[200px] items-center justify-center">
+      {/* <div className="flex h-[100px] w-[200px] items-center justify-center">
         <Image src={Digitus} alt="Digitus" width={100} height={50} className="dark:invert" />
-      </div>
+      </div> */}
       <div className="flex h-[100px] w-[200px] items-center justify-center">
         <Image src={East} alt="East" width={100} height={50} className="dark:invert" />
       </div>
@@ -131,9 +131,9 @@ export const PartnersLogo = () => {
       <div className="flex h-[100px] w-[200px] items-center justify-center">
         <Image src={Hirsch} alt="Hirsch" width={100} height={50} className="dark:invert" />
       </div>
-      <div className="flex h-[100px] w-[200px] items-center justify-center">
+      {/* <div className="flex h-[100px] w-[200px] items-center justify-center">
         <Image src={Ibm} alt="IBM" width={100} height={50} className="dark:invert" />
-      </div>
+      </div> */}
       <div className="flex h-[100px] w-[200px] items-center justify-center">
         <Image src={Idemia} alt="Idemia" width={100} height={50} className="dark:invert" />
       </div>

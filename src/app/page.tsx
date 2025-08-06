@@ -5,13 +5,13 @@ import Link from 'next/link';
 import Loading from './loading';
 
 import { useTranslation } from 'react-i18next';
-import { Box, Lock, Phone, Search, Settings, Sparkles } from 'lucide-react';
+import { Phone } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
 import { InfiniteSlider } from '@/components/ui/infinite-slider';
 import { ProgressiveBlur } from '@/components/ui/progressive-blur';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { HeroImage, ContactImage } from '@/assets';
+import { HeroImage, ContactImage, BusinessConsulting, DigitalSolutions, InternationalExpansion, PartnershipDevelopment, ProcessOptimization  } from '@/assets';
 import { FAQS, TESTIMONIALS } from '@/lib/constants';
 import { GridItem } from '@/components/ui/grid-item';
 import { TestimonialsColumn } from '@/components/ui/testimonials-columns';
@@ -187,12 +187,12 @@ export default function Home() {
             <h2 className="text-copy-title text-3xl font-bold min-[380px]:text-4xl lg:text-5xl">{t('pages.home.services.title')}</h2>
             <p className="text-copy-text pl-1 text-sm font-normal min-[380px]:text-base lg:text-lg">{t('pages.home.services.description')}</p>
           </div>
-          <ul className="grid grid-cols-1 grid-rows-none gap-3 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[38rem] xl:grid-rows-2">
-            <GridItem area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]" icon={<Box className="h-5 w-5" />} title={t('pages.home.services.grid.business-consulting.title')} description={t('pages.home.services.grid.business-consulting.description')} />
-            <GridItem area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]" icon={<Settings className="h-5 w-5" />} title={t('pages.home.services.grid.digital-solutions.title')} description={t('pages.home.services.grid.digital-solutions.description')} />
-            <GridItem area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]" icon={<Lock className="h-5 w-5" />} title={t('pages.home.services.grid.process-optimization.title')} description={t('pages.home.services.grid.process-optimization.description')} />
-            <GridItem area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]" icon={<Sparkles className="h-5 w-5" />} title={t('pages.home.services.grid.international-expansion.title')} description={t('pages.home.services.grid.international-expansion.description')} />
-            <GridItem area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]" icon={<Search className="h-5 w-5" />} title={t('pages.home.services.grid.partnership-development.title')} description={t('pages.home.services.grid.partnership-development.description')} />
+          <ul className="grid grid-cols-1 grid-rows-none gap-3 h-full md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:grid-rows-2">
+            <GridItem area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]" image={<Image src={BusinessConsulting} alt="business-consulting" fill priority className="h-full w-full object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />} title={t('pages.home.services.grid.business-consulting.title')} description={t('pages.home.services.grid.business-consulting.description')} />
+            <GridItem area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]" image={<Image src={DigitalSolutions} alt="digital-solutions" fill priority className="h-full w-full object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />} title={t('pages.home.services.grid.digital-solutions.title')} description={t('pages.home.services.grid.digital-solutions.description')} />
+            <GridItem area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/1/8]" image={<Image src={ProcessOptimization} alt="process-optimization" fill priority className="h-full w-full object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />} title={t('pages.home.services.grid.process-optimization.title')} description={t('pages.home.services.grid.process-optimization.description')} />
+            <GridItem area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]" image={<Image src={PartnershipDevelopment} alt="partnership-development" fill priority className="h-full w-full object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />} title={t('pages.home.services.grid.partnership-development.title')} description={t('pages.home.services.grid.partnership-development.description')} />
+            <GridItem area="md:[grid-area:3/1/4/13] xl:[grid-area:2/5/3/13]" image={<Image src={InternationalExpansion} alt="partnership-development" fill priority className="h-full w-full object-cover" sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />} title={t('pages.home.services.grid.international-expansion.title')} description={t('pages.home.services.grid.international-expansion.description')} />
           </ul>
         </div>
       </section>

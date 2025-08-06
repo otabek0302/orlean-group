@@ -20,17 +20,20 @@
         "p-1": "Orlean Group is a leading business solutions provider with over a decade of experience in delivering exceptional results. Our team of expert consultants combines deep industry knowledge with innovative strategies to help businesses thrive in today's competitive landscape.",
         "p-2": "We specialize in comprehensive business consulting, IT solutions, and strategic planning, offering tailored services that address your unique challenges. Our commitment to excellence and client success drives everything we do, ensuring sustainable growth and measurable results for your business.",
         "buttons": {
-          "business": "Business",
-          "it-solutions": "IT Solutions",
-          "consulting": "Consulting",
-          "real-estate": "Real Estate",
-          "construction": "Construction",
-          "investment": "Investment",
-          "logistics": "Logistics",
-          "education": "Education",
-          "finance": "Finance",
-          "retail": "Retail",
-          "energy": "Energy"
+          "web-development": "WEB DEVELOPMENT",
+          "mobile-development": "MOBILE DEVELOPMENT",
+          "desktop-applications": "DESKTOP APPLICATIONS",
+          "ai-automation": "AI and AUTOMATION",
+          "services-maintenance": "SERVICES AND MAINTENANCE",
+          "databases": "DATABASES",
+          "design-media": "DESIGN AND MEDIA",
+          "documents-registration": "DOCUMENTS AND REGISTRATION",
+          "hardware-software": "Hardware and software implementation",
+          "office-solutions": "Office Solutions",
+          "business-automation": "Business automation",
+          "office-equipment": "Office Equipment",
+          "server-hardware": "Server Hardware",
+          "network-equipment": "Network Equipment"
         }
       },
       "services": {

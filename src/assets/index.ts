@@ -14,6 +14,13 @@ import LinkedIn from './icons/LinkedIn';
 import Phone from './icons/Phone';
 import Telegram from './icons/Telegram';
 
+const BusinessConsulting = './business-consulting.jpg';
+const DigitalSolutions = './digital-solutions.jpg';
+const InternationalExpansion = './international-expansion.jpg';
+const PartnershipDevelopment = './partnership-development.jpg';
+const ProcessOptimization = './process-optimization.jpg';
+
+
 // Partner logos
 const A10 = '/images/logos/a10.svg';
 const Acti = '/images/logos/acti.svg';
@@ -106,20 +113,20 @@ const Vertiv = '/images/logos/vertiv.svg';
 const Ysoft = '/images/logos/ysoft.svg';
 const Zimbra = '/images/logos/zimbra.svg';
 
-export { 
-  HeroImage, 
+export {
+  HeroImage,
   ContactImage,
-  Logo, 
-  LogoWhite, 
-  LogoColored, 
-  AboutImage, 
-  AboutImage1, 
-  AboutImage2, 
-  AboutImage3, 
-  Facebook, 
-  Instagram, 
-  LinkedIn, 
-  Phone, 
+  Logo,
+  LogoWhite,
+  LogoColored,
+  AboutImage,
+  AboutImage1,
+  AboutImage2,
+  AboutImage3,
+  Facebook,
+  Instagram,
+  LinkedIn,
+  Phone,
   Telegram,
   // Partner logos
   A10,
@@ -211,5 +218,11 @@ export {
   Veritas,
   Vertiv,
   Ysoft,
-  Zimbra
+  Zimbra,
+  // Services images
+  BusinessConsulting,
+  DigitalSolutions,
+  InternationalExpansion,
+  PartnershipDevelopment,
+  ProcessOptimization,
 };

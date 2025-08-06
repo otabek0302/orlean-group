@@ -20,17 +20,20 @@
         "p-1": "Orlean Group - это ведущий поставщик бизнес-решений с более чем десятилетним опытом в обеспечении эксклюзивных результатов. Наша команда экспертов в области консультирования объединяет глубокие знания отрасли с инновационными стратегиями, чтобы помочь бизнесу процветать в современной конкурентной среде.",
         "p-2": "Мы специализируемся на комплексном консультировании по бизнесу, решениях IT и стратегическом планировании, предлагая услуги, адаптированные к вашим уникальным вызовам. Наша преданность превосходному качеству и успеху клиентов является основой всего, что мы делаем, обеспечивая устойчивый рост и измеримые результаты для вашего бизнеса.",
         "buttons": {
-          "business": "Biznes",
-          "it-solutions": "IT yechimlar",
-          "consulting": "Konsultatsiya",
-          "real-estate": "Mulk",
-          "construction": "Qurilish",
-          "investment": "Investitsiya",
-          "logistics": "Logistika",
-          "education": "Ta'lim",
-          "finance": "Finans",
-          "retail": "Savdo",
-          "energy": "Energiya"
+          "web-development": "VEB-DASTURLASH",
+          "mobile-development": "MOBIL DASTURLASH",
+          "desktop-applications": "DESKTOP DASTURLAR",
+          "ai-automation": "AI VA AVTOMATLASHTIRISH",
+          "services-maintenance": "XIZMATLAR VA XIZMAT KO'RSATISH",
+          "databases": "MA'LUMOTLAR BAZASI",
+          "design-media": "DIZAYN VA MEDIA",
+          "documents-registration": "HUJJATLAR VA RO'YXATDAN O'TKAZISH",
+          "hardware-software": "Uskuna va dasturiy ta'minotni joriy etish",
+          "office-solutions": "Ofis yechimlari",
+          "business-automation": "Biznes avtomatlashtirish",
+          "office-equipment": "Ofis uskunalari",
+          "server-hardware": "Server uskunalari",
+          "network-equipment": "Tarmoq uskunalari"
         }
       },
       "services": {
