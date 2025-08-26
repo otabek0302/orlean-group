@@ -18,7 +18,7 @@ const BusinessConsulting = './business-consulting.jpg';
 const DigitalSolutions = './digital-solutions.jpg';
 const InternationalExpansion = './international-expansion.jpg';
 const PartnershipDevelopment = './partnership-development.jpg';
-const ProcessOptimization = './process-optimization.jpg';
+const ProcessOptimization = './process-optimization.png';
 
 
 // Partner logos
