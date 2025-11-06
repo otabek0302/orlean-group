@@ -102,7 +102,7 @@ export default function Home() {
               <p className="mb-3 text-base text-white/80 md:text-lg lg:text-xl">{t('pages.home.hero.description')}</p>
               <div className="flex gap-2">
                 <Button variant="outline" asChild className="group border-primary dark:border-primary hover:bg-primary dark:bg-primary relative h-fit cursor-pointer overflow-hidden rounded-lg border-1 bg-white px-3 py-2 transition-all duration-300 hover:border-white hover:bg-transparent lg:rounded-xl lg:px-4 lg:py-2.5">
-                  <Link href="tel:+998933300444">
+                  <Link href="tel:+998995945131">
                     <span className="text-primary text-sm leading-normal font-normal group-hover:text-white lg:text-base dark:text-white">{t('pages.home.hero.button')}</span>
                     <Phone className="text-primary mr-1 h-4 w-4 rotate-45 transition-all duration-500 group-hover:rotate-80 group-hover:text-white lg:h-5 lg:w-5 dark:text-white" />
                   </Link>
@@ -169,7 +169,7 @@ export default function Home() {
                 <p className="text-copy-text mb-8 text-lg">{t('pages.home.about.p-2')}</p>
                 <div className="flex gap-4">
                   <Button variant="outline" asChild className="group border-primary dark:border-primary hover:bg-primary dark:bg-primary relative h-fit cursor-pointer overflow-hidden rounded-lg border-1 bg-white px-3 py-2 transition-all duration-300 hover:border-white hover:bg-transparent lg:rounded-xl lg:px-4 lg:py-2.5">
-                    <Link href="tel:+998933300444">
+                    <Link href="tel:+998995945131">
                       <span className="text-primary text-sm leading-normal font-normal group-hover:text-white lg:text-base dark:text-white">{t('pages.home.hero.button')}</span>
                       <Phone className="text-primary mr-1 h-4 w-4 rotate-45 transition-all duration-500 group-hover:rotate-80 group-hover:text-white lg:h-5 lg:w-5 dark:text-white" />
                     </Link>
@@ -252,7 +252,7 @@ export default function Home() {
               <h2 className="text-copy-title text-3xl font-bold min-[380px]:text-4xl lg:text-5xl">{t('pages.home.faqs.title')}</h2>
               <p className="text-copy-text pl-1 text-sm font-normal min-[380px]:text-base lg:text-lg">{t('pages.home.faqs.description')}</p>
               <Button variant="outline" asChild className="group border-primary dark:border-primary hover:bg-primary dark:bg-primary relative h-fit cursor-pointer overflow-hidden rounded-lg border-1 bg-white px-3 py-2 transition-all duration-300 hover:border-white hover:bg-transparent lg:rounded-xl lg:px-4 lg:py-2.5">
-                <Link href="tel:+998933300444">
+                <Link href="tel:+998995945131">
                   <span className="text-primary text-sm leading-normal font-normal group-hover:text-white lg:text-base dark:text-white">{t('pages.home.faqs.button')}</span>
                   <Phone className="text-primary mr-1 h-4 w-4 rotate-45 transition-all duration-500 group-hover:rotate-80 group-hover:text-white lg:h-5 lg:w-5 dark:text-white" />
                 </Link>

@@ -82,7 +82,7 @@ export const MobileMenu = () => {
                 <Button variant="outline" size="icon" className="group border-primary dark:border-primary hover:bg-primary h-9 w-9 cursor-pointer rounded-lg lg:rounded-xl lg:h-10 lg:w-10 shadow-none">
                   <Phone className="text-primary dark:text-white h-4 w-4 lg:h-5 lg:w-5 group-hover:text-white" />
                 </Button>
-                <span className="text-sm font-bold text-white">+998 90 123 45 67</span>
+                <span className="text-sm font-bold text-white">+998995945131</span>
               </div>
             </div>
           </motion.ul>

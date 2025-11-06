@@ -43,7 +43,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               ],
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+998-93-330-0444",
+                "telephone": "+998995945131",
                 "contactType": "customer service",
                 "availableLanguage": ["English", "Uzbek", "Russian"]
               }

@@ -97,7 +97,7 @@ const Contact = () => {
                 <p className="mb-2 text-sm font-semibold text-white/80">{t('pages.contact.form.text')}</p>
                 <div className="mb-2 flex items-center gap-3 text-lg font-medium text-white/90">
                   <Phone className="h-6 w-6" />
-                  <span>+998 93 330 04 44</span>
+                  <span>+998995945131</span>
                 </div>
                 <div className="flex items-center gap-3 text-lg font-medium text-white/90">
                   <Mail className="h-6 w-6" />
